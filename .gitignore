@@ -1,17 +1,29 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+########## Intellij IDEA
+*.iml
+.idea/*
+# Icon for this project
+!.idea/icon.png
+# Sets the default file encoding to UTF-8
+!.idea/encodings.xml
+# Git version control setting
+!.idea/vcs.xml
+# Project name
+!.idea/.name
+# Ignores of Intellij itself
+!.idea/.gitignore
 
-# dependencies
+########## Dependencies
 /node_modules
 /.pnp
 .pnp.js
 
-# testing
+########## Testing
 /coverage
 
-# production
+########## Production
 /build
 
-# misc
+########## Misc
 .DS_Store
 .env.local
 .env.development.local
