@@ -1,16 +1,22 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
+import HomePage from './HomePage';
 import reportWebVitals from './reportWebVitals';
+import {CssBaseline} from '@mui/material';
+
+// https://mui.com/material-ui/getting-started/installation/
+// TODO: roboto font
+// TODO: materia-ui icons
+// TODO: Sentry
 
 const root = ReactDOM.createRoot(
-  document.getElementById('root') as HTMLElement
+	document.getElementById('root') as HTMLElement
 );
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+	<React.StrictMode>
+		<CssBaseline />
+		<HomePage />
+	</React.StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function
