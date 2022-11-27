@@ -21,7 +21,7 @@ function Header() {
 
 function MenuItem(props: {children: React.ReactNode}) {
 	return (
-		<Link href="https://github.com/NLthijs48" target="_blank" rel="noopener noreferrer" style={{textDecoration: 'none'}}>
+		<Link href="https://github.com/NLthijs48" target="_blank" rel="noopener noreferrer" underline="none">
 			<Button
 				variant="outlined"
 				style={{
