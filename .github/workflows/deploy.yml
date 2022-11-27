@@ -1,0 +1,25 @@
+name: "Deploy to Github Pages"
+
+# Trigger on pushes to the master branch
+on:
+  push:
+    branches:
+      - 'main'
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: "Checkout"
+        uses: actions/checkout@v2
+      # TODO: cache npm?
+      - name: "Install Dependencies"
+        run: npm install
+      - name: "Github Pages Deployment"
+        run: |
+          git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
+          npm deploy -u "github-actions-bot <support+actions@github.com>"
+        # Only deploy the main branch (precaution)
+        if: ${{ github.ref == 'refs/heads/main' }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
