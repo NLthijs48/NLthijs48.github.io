@@ -21,8 +21,7 @@
 /coverage
 
 ########## Production
-/build/*
-!/build/CNAME
+/build
 
 ########## Misc
 .DS_Store
