@@ -3,6 +3,10 @@ import ReactDOM from 'react-dom/client';
 import HomePage from './HomePage';
 import reportWebVitals from './reportWebVitals';
 import {CssBaseline} from '@mui/material';
+import '@fontsource/roboto/300.css';
+import '@fontsource/roboto/400.css';
+import '@fontsource/roboto/500.css';
+import '@fontsource/roboto/700.css';
 
 // https://mui.com/material-ui/getting-started/installation/
 // TODO: roboto font
