@@ -6,14 +6,13 @@ import Header from './components/Header';
 function HomePage() {
 	return (
 		<div className="App">
-			<header className="App-header">
-				<img src={icon} className="App-logo" alt="logo" />
-				<p>
-					Hello world, this is the website of Thijs
-				</p>
+			<Header />
+			<main>
+				<img src={icon} className="App-logo" alt="Logo" />
+				<p>Hello world, this is the website of Thijs</p>
 
 				<Button variant="contained">Hello World</Button>
-			</header>
+			</main>
 		</div>
 	);
 }
