@@ -14,14 +14,21 @@ function Header() {
 				justifyContent: 'center',
 			}}
 		>
-			<MenuItem>Github</MenuItem>
+			<ExternalLinkButton href="https://github.com/NLthijs48">Github</ExternalLinkButton>
+			<ExternalLinkButton href="https://www.linkedin.com/in/thijswiefferink/">LinkedIn</ExternalLinkButton>
+			<ExternalLinkButton href="https://www.openstreetmap.org/user/NLthijs48">OpenStreetMap</ExternalLinkButton>
 		</header>
 	);
 }
 
-function MenuItem(props: {children: React.ReactNode}) {
+interface ExternalLinkButtonProps {
+	children: React.ReactNode,
+	href: string,
+}
+
+function ExternalLinkButton(props: ExternalLinkButtonProps) {
 	return (
-		<Link href="https://github.com/NLthijs48" target="_blank" rel="noopener noreferrer" underline="none">
+		<Link href={props.href} target="_blank" rel="noopener noreferrer" underline="none">
 			<Button
 				variant="outlined"
 				style={{
