@@ -1,24 +1,25 @@
 import React from 'react';
 import Button from '@mui/material/Button';
 import Link from '@mui/material/Link';
+import {AppBar, Toolbar} from '@mui/material';
 
 /** Header at the top of the page */
 function Header() {
 	return (
-		<header
-			style={{
-				display: 'flex',
-				flexDirection: 'row',
-				backgroundColor: '#ec623d',
-				height: 50,
-				justifyContent: 'center',
-				width: '100%',
-			}}
-		>
-			<ExternalLinkButton href="https://github.com/NLthijs48">Github</ExternalLinkButton>
-			<ExternalLinkButton href="https://www.linkedin.com/in/thijswiefferink/">LinkedIn</ExternalLinkButton>
-			<ExternalLinkButton href="https://www.openstreetmap.org/user/NLthijs48">OpenStreetMap</ExternalLinkButton>
-		</header>
+		<AppBar position="relative">
+			<Toolbar
+				style={{
+					display: 'flex',
+					flexDirection: 'row',
+					justifyContent: 'center',
+					width: '100%',
+				}}
+			>
+				<ExternalLinkButton href="https://github.com/NLthijs48">Github</ExternalLinkButton>
+				<ExternalLinkButton href="https://www.linkedin.com/in/thijswiefferink/">LinkedIn</ExternalLinkButton>
+				<ExternalLinkButton href="https://www.openstreetmap.org/user/NLthijs48">OpenStreetMap</ExternalLinkButton>
+			</Toolbar>
+		</AppBar>
 	);
 }
 

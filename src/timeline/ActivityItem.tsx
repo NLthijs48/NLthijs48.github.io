@@ -1,13 +1,15 @@
 import Paper from '@mui/material/Paper';
 import React from 'react';
 import ActivityInformation from '../activities/ActivityInformation';
-import {PlayArrow, SportsScore} from '@mui/icons-material';
+import TimePeriodIndicator from './TimePeriodIndicator';
+import theme from '../theme';
 
 interface ActivityItemProps {
 	activity: ActivityInformation;
 	/** Indicate this activity is the last one, hiding the connector */
 	last?: boolean;
 }
+
 function ActivityItem(props: ActivityItemProps) {
 	// Different colors for hobby/job/study?
 	return (
@@ -20,7 +22,7 @@ function ActivityItem(props: ActivityItemProps) {
 						display: 'flex',
 						alignItems: 'center',
 						justifyContent: 'center',
-						backgroundColor: '#ec623d', // Orange
+						backgroundColor: theme.palette.primary.main,
 						marginTop: 0,
 						marginBottom: '0.4em',
 						borderRadius: '50%',
@@ -70,22 +72,7 @@ function ActivityItem(props: ActivityItemProps) {
 						{props.activity.name}
 					</h3>
 				</Paper>
-				<div
-					style={{
-						fontSize: '0.5em',
-						opacity: 0.8,
-						height: '2em',
-						display: 'flex',
-						alignItems: 'center',
-					}}
-				>
-					<PlayArrow style={{opacity: 0.8, marginLeft: '-0.2em', fontSize: 'inherit'}} /> {props.activity.from}
-					{!!props.activity.till && (
-						<React.Fragment>
-							<SportsScore style={{marginLeft: '0.5em', opacity: 0.8, fontSize: 'inherit'}} /> {props.activity.till}
-						</React.Fragment>
-					)}
-				</div>
+				<TimePeriodIndicator activity={props.activity} />
 				<div style={{fontSize: '0.6em', marginTop: '0.5em'}}>{props.activity.tagline}</div>
 			</div>
 		</div>
