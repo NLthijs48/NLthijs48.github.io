@@ -2,7 +2,8 @@ import Paper from '@mui/material/Paper';
 import React from 'react';
 import ActivityInformation from '../activities/ActivityInformation';
 import TimePeriodIndicator from './TimePeriodIndicator';
-import theme from '../theme';
+import {activityTypeColors, activityTypeDescriptions} from '../activities/ActivityType';
+import Tooltip from '@mui/material/Tooltip';
 
 interface ActivityItemProps {
 	activity: ActivityInformation;
@@ -11,26 +12,30 @@ interface ActivityItemProps {
 }
 
 function ActivityItem(props: ActivityItemProps) {
+	const iconColor = activityTypeColors[props.activity.activityType];
+
 	// Different colors for hobby/job/study?
 	return (
 		<div style={{marginBottom: '0.4em', display: 'flex'}}>
 			<div style={{zIndex: 1, display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
-				<div
-					style={{
-						width: '2em',
-						height: '2em',
-						display: 'flex',
-						alignItems: 'center',
-						justifyContent: 'center',
-						backgroundColor: theme.palette.primary.main,
-						marginTop: 0,
-						marginBottom: '0.4em',
-						borderRadius: '50%',
-						color: 'white',
-					}}
-				>
-					<props.activity.Icon style={{fontSize: '1.4em'}} />
-				</div>
+				<Tooltip title={activityTypeDescriptions[props.activity.activityType]}>
+					<div
+						style={{
+							width: '2em',
+							height: '2em',
+							display: 'flex',
+							alignItems: 'center',
+							justifyContent: 'center',
+							backgroundColor: iconColor,
+							marginTop: 0,
+							marginBottom: '0.4em',
+							borderRadius: '50%',
+							color: 'white',
+						}}
+					>
+						<props.activity.Icon style={{fontSize: '1.4em'}} />
+					</div>
+				</Tooltip>
 				{!props.last && <div style={{width: '0.2em', backgroundColor: '#a9a9a9', flex: 1}} />}
 			</div>
 
