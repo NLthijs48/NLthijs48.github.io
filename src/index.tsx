@@ -9,8 +9,6 @@ import '@fontsource/roboto/500.css';
 import '@fontsource/roboto/700.css';
 
 // https://mui.com/material-ui/getting-started/installation/
-// TODO: roboto font
-// TODO: materia-ui icons
 // TODO: Sentry
 
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement);

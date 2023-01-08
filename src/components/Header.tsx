@@ -12,6 +12,7 @@ function Header() {
 				backgroundColor: '#ec623d',
 				height: 50,
 				justifyContent: 'center',
+				width: '100%',
 			}}
 		>
 			<ExternalLinkButton href="https://github.com/NLthijs48">Github</ExternalLinkButton>
@@ -22,8 +23,8 @@ function Header() {
 }
 
 interface ExternalLinkButtonProps {
-	children: React.ReactNode,
-	href: string,
+	children: React.ReactNode;
+	href: string;
 }
 
 function ExternalLinkButton(props: ExternalLinkButtonProps) {
