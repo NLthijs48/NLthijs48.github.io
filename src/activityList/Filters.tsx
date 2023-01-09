@@ -1,8 +1,10 @@
 import Button from '@mui/material/Button';
 import ButtonGroup from '@mui/material/ButtonGroup';
 import ActivityType, {activityTypeColors, activityTypeIcons} from '../activities/ActivityType';
-import {CSSProperties} from 'react';
+import {createContext, CSSProperties} from 'react';
 import AppsIcon from '@mui/icons-material/Apps';
+
+export const FilterContext = createContext<null | ActivityType>(null);
 
 interface FiltersProps {
 	style?: CSSProperties;

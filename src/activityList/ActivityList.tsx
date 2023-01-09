@@ -1,19 +1,38 @@
-import React from 'react';
+import React, {CSSProperties, useContext} from 'react';
 import ActivityItem from './ActivityItem';
-import Filters from './Filters';
 import ActivityType from '../activities/ActivityType';
-import allActivities from '../activities/allActivities';
+import ActivityInformation from '../activities/ActivityInformation';
+import {FilterContext} from './Filters';
 
-function ActivityList() {
-	const [activityTypeFilter, setActivityTypeFilter] = React.useState<null | ActivityType>(null);
-	const activities = allActivities.filter((activity) => {
-		return activityTypeFilter === null || activityTypeFilter === activity.activityType;
-	});
+function activityMatchesFilter(activity: ActivityInformation, filter: null | ActivityType): boolean {
+	// No filter to apply
+	if (filter === null) {
+		return true;
+	}
+
+	// Activity itself matches
+	if (filter === activity.activityType) {
+		return true;
+	}
+
+	// Nested activity matches
+	if (activity.activities && activity.activities.find((nestedActivity) => activityMatchesFilter(nestedActivity, filter))) {
+		return true;
+	}
+
+	return false;
+}
+
+interface ActivityListProps {
+	activities: ActivityInformation[];
+	style?: CSSProperties;
+}
+function ActivityList(props: ActivityListProps) {
+	const activityTypeFilter = useContext(FilterContext);
+	const activities = props.activities.filter((activity) => activityMatchesFilter(activity, activityTypeFilter));
 
 	return (
-		<div style={{fontSize: '2em'}}>
-			<Filters activityType={activityTypeFilter} setActivityType={setActivityTypeFilter} style={{marginBottom: '1em'}} />
-
+		<div style={props.style}>
 			{activities.map((activity, index) => (
 				<ActivityItem key={index} activity={activity} />
 			))}

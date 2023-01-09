@@ -4,6 +4,7 @@ import ActivityInformation from '../activities/ActivityInformation';
 import TimePeriodIndicator from './TimePeriodIndicator';
 import {activityTypeColors, activityTypeDescriptions} from '../activities/ActivityType';
 import Tooltip from '@mui/material/Tooltip';
+import ActivityList from './ActivityList';
 
 interface ActivityItemProps {
 	activity: ActivityInformation;
@@ -74,11 +75,7 @@ function ActivityItem(props: ActivityItemProps) {
 				<div style={{fontSize: '0.6em', marginTop: '0.5em'}}>{props.activity.description}</div>
 
 				{!!props.activity.activities && (
-					<div style={{marginTop: '0.5em'}}>
-						{props.activity.activities.map((nestedActivity, index) => (
-							<ActivityItem key={index} activity={nestedActivity} style={{fontSize: '0.7em'}} />
-						))}
-					</div>
+					<ActivityList activities={props.activity.activities} style={{fontSize: '0.7em', marginTop: '0.5em'}} />
 				)}
 			</div>
 		</div>

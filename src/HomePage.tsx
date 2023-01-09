@@ -2,7 +2,7 @@ import React from 'react';
 import icon from './images/icon-animated.svg';
 import Header from './components/Header';
 import Link from '@mui/material/Link';
-import ActivityList from '././activityList/ActivityList';
+import NestedActivityList from './activityList/NestedActivityList';
 
 function HomePage() {
 	return (
@@ -23,7 +23,7 @@ function HomePage() {
 					</div>
 				</div>
 
-				<ActivityList />
+				<NestedActivityList />
 			</main>
 		</div>
 	);
