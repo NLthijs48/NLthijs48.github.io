@@ -35,6 +35,9 @@ s	 * - year-month
 
 	/** Website that is most relevant */
 	website?: string;
+
+	/** Activities done during this activity */
+	activities?: ActivityInformation[];
 }
 
 export interface EducationInformation extends ActivityInformationBase {

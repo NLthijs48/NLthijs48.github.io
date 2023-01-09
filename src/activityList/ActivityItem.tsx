@@ -1,5 +1,5 @@
 import Paper from '@mui/material/Paper';
-import React from 'react';
+import React, {CSSProperties} from 'react';
 import ActivityInformation from '../activities/ActivityInformation';
 import TimePeriodIndicator from './TimePeriodIndicator';
 import {activityTypeColors, activityTypeDescriptions} from '../activities/ActivityType';
@@ -7,13 +7,14 @@ import Tooltip from '@mui/material/Tooltip';
 
 interface ActivityItemProps {
 	activity: ActivityInformation;
+	style?: CSSProperties;
 }
 
 function ActivityItem(props: ActivityItemProps) {
 	const iconColor = activityTypeColors[props.activity.activityType];
 
 	return (
-		<div style={{marginBottom: '0.4em', display: 'flex', flexDirection: 'column'}}>
+		<div style={{marginBottom: '0.5em', display: 'flex', flexDirection: 'column', ...props.style}}>
 			<Paper
 				elevation={3}
 				style={{
@@ -63,7 +64,6 @@ function ActivityItem(props: ActivityItemProps) {
 					fontSize: 'inherit',
 					marginBottom: '0.5em',
 					paddingTop: 0,
-					paddingBottom: '0.5em',
 					paddingLeft: '2.5em',
 					paddingRight: '0.5em',
 					flex: 1,
@@ -72,6 +72,14 @@ function ActivityItem(props: ActivityItemProps) {
 			>
 				<TimePeriodIndicator activity={props.activity} />
 				<div style={{fontSize: '0.6em', marginTop: '0.5em'}}>{props.activity.description}</div>
+
+				{!!props.activity.activities && (
+					<div style={{marginTop: '0.5em'}}>
+						{props.activity.activities.map((nestedActivity, index) => (
+							<ActivityItem key={index} activity={nestedActivity} style={{fontSize: '0.7em'}} />
+						))}
+					</div>
+				)}
 			</div>
 		</div>
 	);
