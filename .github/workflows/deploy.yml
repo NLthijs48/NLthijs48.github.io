@@ -14,7 +14,8 @@ jobs:
       - name: 'Checkout'
         uses: actions/checkout@v3
       - name: 'Prettier check'
-        uses: actionsx/prettier@v2
+        # Use commit hash version that is updated to Node 16 (update to a release version when available)
+        uses: actionsx/prettier@e90ec5455552f0f640781bdd5f5d2415acb52f1a
         with:
           args: --check .
   deploy:
