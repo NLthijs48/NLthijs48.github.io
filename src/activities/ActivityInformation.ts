@@ -12,9 +12,10 @@ interface ActivityInformationBase {
 	/**
 	 * Single line that describes it
 	 */
-	tagline: React.ReactNode;
+	description: React.ReactNode;
 	/**
 	 * Icon that represents the activity
+	 * https://mui.com/material-ui/material-icons/
 	 */
 	Icon: typeof SvgIcon;
 

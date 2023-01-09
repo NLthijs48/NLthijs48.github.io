@@ -6,7 +6,7 @@ import ActivityType from '../ActivityType';
 const computerScienceMaster: EducationInformation = {
 	activityType: ActivityType.Education,
 	name: 'Computer Science Master',
-	tagline: <div>Master education at the University of Twente</div>,
+	description: <div>Master education at the University of Twente, thesis done at the company Staying.</div>,
 	from: 'September 2015', // Started on the 1st
 	till: 'March 2018', // Presentation and diploma on the 7th
 	Icon: SchoolIcon,

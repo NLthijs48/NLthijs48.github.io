@@ -78,7 +78,7 @@ function ActivityItem(props: ActivityItemProps) {
 					</h3>
 				</Paper>
 				<TimePeriodIndicator activity={props.activity} />
-				<div style={{fontSize: '0.6em', marginTop: '0.5em'}}>{props.activity.tagline}</div>
+				<div style={{fontSize: '0.6em', marginTop: '0.5em'}}>{props.activity.description}</div>
 			</div>
 		</div>
 	);

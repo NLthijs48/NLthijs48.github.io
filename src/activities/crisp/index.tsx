@@ -8,12 +8,17 @@ import ActivityType from '../ActivityType';
 const crisp: JobInformation = {
 	activityType: ActivityType.Job,
 	name: 'Crisp',
-	tagline: (
+	description: (
 		<div>
 			Revamping the food logistics chain from{' '}
 			<AgricultureIcon style={{opacity: 0.6, fontSize: '130%', marginBottom: '-0.2em', marginRight: '0.1em'}} />
 			supplier to <PersonIcon style={{opacity: 0.6, fontSize: '130%', marginBottom: '-0.2em'}} />
-			customer
+			customer.
+			<div style={{marginTop: '0.5em'}}>
+				I worked on the consumer grocery ordering app (initial setup and recipe feature in particular), the internal portal for
+				managing all data, and have built a bit set of warehouse tools (product availability calculation, automatic purchasing,
+				label printing, multiple picking system iterations).
+			</div>
 		</div>
 	),
 	from: 'April 2018',
