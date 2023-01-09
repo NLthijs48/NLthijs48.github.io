@@ -8,7 +8,7 @@ function TimePeriodIndicator(props: {activity: ActivityInformation}) {
 			style={{
 				fontSize: '0.5em',
 				opacity: 0.8,
-				height: '2em',
+				marginTop: '0.5em',
 				display: 'flex',
 				alignItems: 'center',
 			}}
