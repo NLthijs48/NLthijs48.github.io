@@ -4,7 +4,8 @@ import computerScienceMaster from './computerScienceMaster/index';
 import computerScienceBachelor from './computerScienceBachelor/index';
 import homeAssistant from './homeAssistant/index';
 import staying from './staying/index';
+import happening from './happening/index';
 
-const allActivities: ActivityInformation[] = [crisp, computerScienceMaster, staying, computerScienceBachelor, homeAssistant];
+const allActivities: ActivityInformation[] = [crisp, computerScienceMaster, staying, happening, computerScienceBachelor, homeAssistant];
 
 export default allActivities;

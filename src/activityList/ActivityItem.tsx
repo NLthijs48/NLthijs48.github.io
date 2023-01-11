@@ -42,7 +42,7 @@ function ActivityItem(props: ActivityItemProps) {
 							color: 'white',
 						}}
 					>
-						<props.activity.Icon style={{fontSize: '1.4em'}} />
+						<props.activity.Icon style={{fontSize: '1.3em'}} />
 					</div>
 				</Tooltip>
 
