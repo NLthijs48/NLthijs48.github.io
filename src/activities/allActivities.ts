@@ -5,7 +5,16 @@ import computerScienceBachelor from './computerScienceBachelor/computerScienceBa
 import homeAssistant from './homeAssistant/homeAssistant';
 import staying from './staying/staying';
 import happening from './happening/happening';
+import errorSink from './errorSink/errorSink';
 
-const allActivities: ActivityInformation[] = [crisp, computerScienceMaster, staying, happening, computerScienceBachelor, homeAssistant];
+const allActivities: ActivityInformation[] = [
+	crisp,
+	homeAssistant,
+	computerScienceMaster,
+	staying,
+	errorSink,
+	happening,
+	computerScienceBachelor,
+];
 
 export default allActivities;
