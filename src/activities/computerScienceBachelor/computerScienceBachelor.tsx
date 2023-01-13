@@ -3,7 +3,7 @@ import SchoolIcon from '@mui/icons-material/School';
 import React from 'react';
 import ActivityType from '../ActivityType';
 
-const computerScienceMaster: EducationInformation = {
+const computerScienceBachelor: EducationInformation = {
 	activityType: ActivityType.Education,
 	name: 'Computer Science Bachelor',
 	description: <div>Bachelor education at the University of Twente.</div>,
@@ -13,4 +13,4 @@ const computerScienceMaster: EducationInformation = {
 	website: 'https://www.utwente.nl/en/education/bachelor/programmes/technical-computer-science/',
 };
 
-export default computerScienceMaster;
+export default computerScienceBachelor;
