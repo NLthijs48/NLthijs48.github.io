@@ -6,6 +6,7 @@ import homeAssistant from './homeAssistant/homeAssistant';
 import staying from './staying/staying';
 import happening from './happening/happening';
 import errorSink from './errorSink/errorSink';
+import interactiveMessenger from './interactiveMessenger/interactiveMessenger';
 
 const allActivities: ActivityInformation[] = [
 	crisp,
@@ -13,6 +14,7 @@ const allActivities: ActivityInformation[] = [
 	computerScienceMaster,
 	staying,
 	errorSink,
+	interactiveMessenger,
 	happening,
 	computerScienceBachelor,
 ];

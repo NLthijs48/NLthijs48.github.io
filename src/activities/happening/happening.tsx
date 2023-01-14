@@ -1,5 +1,5 @@
 import {JobInformation} from '../ActivityInformation';
-import ChatIcon from '@mui/icons-material/Chat';
+import QuestionAnswerIcon from '@mui/icons-material/QuestionAnswer';
 import React from 'react';
 import ActivityType from '../ActivityType';
 import battleWords from './battleWords';
@@ -17,7 +17,7 @@ const happening: JobInformation = {
 	),
 	from: 'July 2015',
 	till: 'Augustus 2016',
-	Icon: ChatIcon,
+	Icon: QuestionAnswerIcon,
 	website: 'https://happening.im',
 	activities: [battleWords, whereabouts, splitTheBill],
 };
