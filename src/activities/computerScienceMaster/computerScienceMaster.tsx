@@ -3,6 +3,7 @@ import SchoolIcon from '@mui/icons-material/School';
 import React from 'react';
 import ActivityType from '../ActivityType';
 import masterThesis from './masterThesis';
+import dataScienceTimeTabling from './dataScienceTimeTabling';
 
 const computerScienceMaster: EducationInformation = {
 	activityType: ActivityType.Education,
@@ -12,7 +13,7 @@ const computerScienceMaster: EducationInformation = {
 	till: 'March 2018', // Presentation and diploma on the 7th
 	Icon: SchoolIcon,
 	website: 'https://www.utwente.nl/en/education/master/programmes/computer-science/',
-	activities: [masterThesis],
+	activities: [masterThesis, dataScienceTimeTabling],
 };
 
 export default computerScienceMaster;
