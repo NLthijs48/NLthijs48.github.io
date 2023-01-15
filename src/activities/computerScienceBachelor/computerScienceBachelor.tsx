@@ -3,6 +3,7 @@ import SchoolIcon from '@mui/icons-material/School';
 import React from 'react';
 import ActivityType from '../ActivityType';
 import conquest from './conquest';
+import bachelorThesis from './bachelorThesis';
 
 const computerScienceBachelor: EducationInformation = {
 	activityType: ActivityType.Education,
@@ -12,7 +13,7 @@ const computerScienceBachelor: EducationInformation = {
 	till: 'September 2015', // Got the diploma on the 11th
 	Icon: SchoolIcon,
 	website: 'https://www.utwente.nl/en/education/bachelor/programmes/technical-computer-science/',
-	activities: [conquest],
+	activities: [bachelorThesis, conquest],
 };
 
 export default computerScienceBachelor;
