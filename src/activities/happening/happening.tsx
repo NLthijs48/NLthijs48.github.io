@@ -5,6 +5,7 @@ import ActivityType from '../ActivityType';
 import battleWords from './battleWords';
 import splitTheBill from './splitTheBill';
 import whereabouts from './whereabouts';
+import commitLog from './commitLog';
 
 const happening: JobInformation = {
 	activityType: ActivityType.Job,
@@ -19,7 +20,7 @@ const happening: JobInformation = {
 	till: 'Augustus 2016',
 	Icon: QuestionAnswerIcon,
 	website: 'https://happening.im',
-	activities: [battleWords, whereabouts, splitTheBill],
+	activities: [battleWords, commitLog, whereabouts, splitTheBill],
 };
 
 export default happening;
