@@ -12,6 +12,7 @@ import erveGetkot from './erveGetkot/erveGetkot';
 import robKemperink from './robKemperink/robKemperink';
 import kienhoes from './kienhoes/kienhoes';
 import cantabile from './cantabile/cantabile';
+import wolters from './wolters/wolters';
 
 const allActivities: ActivityInformation[] = [
 	crisp,
@@ -27,6 +28,7 @@ const allActivities: ActivityInformation[] = [
 	robKemperink,
 	kienhoes,
 	cantabile,
+	wolters,
 ];
 
 export default allActivities;
