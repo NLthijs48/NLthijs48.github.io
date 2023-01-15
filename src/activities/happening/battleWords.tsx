@@ -13,6 +13,7 @@ const battleWords: JobInformation = {
 		</div>
 	),
 	from: 'February 2016', // This is a guess
+	till: 'April 2016', // This is a guess
 	Icon: ExplicitIcon, // Looks like a letter tile of the game
 };
 

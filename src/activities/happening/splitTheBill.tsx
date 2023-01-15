@@ -13,6 +13,7 @@ const splitTheBill: JobInformation = {
 		</div>
 	),
 	from: 'July 2015', // First project I worked on at Happening
+	till: 'Oktober 2015', // Couple of later upgrades in Oktober
 	Icon: AttachMoneyIcon,
 	website: 'https://github.com/Happening/SplitTheBill',
 };

@@ -73,7 +73,6 @@ function ActivityItem(props: ActivityItemProps) {
 			>
 				<TimePeriodIndicator activity={props.activity} />
 				<div style={{fontSize: '0.6em', marginTop: '0.5em'}}>{props.activity.description}</div>
-
 				{!!props.activity.activities && (
 					<ActivityList activities={props.activity.activities} style={{fontSize: '0.7em', marginTop: '0.5em'}} />
 				)}

@@ -1,5 +1,5 @@
 import {HobbyInformation} from '../ActivityInformation';
-import ChatIcon from '@mui/icons-material/Chat';
+import FilterAltIcon from '@mui/icons-material/Chat';
 import ActivityType from '../ActivityType';
 
 const interactiveMessenger: HobbyInformation = {
@@ -10,7 +10,7 @@ const interactiveMessenger: HobbyInformation = {
 	from: 'November 2014',
 	// End of active development
 	till: 'December 2017',
-	Icon: ChatIcon,
+	Icon: FilterAltIcon,
 	website: 'https://github.com/NLthijs48/InteractiveMessenger',
 };
 
