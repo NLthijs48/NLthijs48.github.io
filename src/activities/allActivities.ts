@@ -11,6 +11,7 @@ import areaShop from './areaShop/areaShop';
 import erveGetkot from './erveGetkot/erveGetkot';
 import robKemperink from './robKemperink/robKemperink';
 import kienhoes from './kienhoes/kienhoes';
+import cantabile from './cantabile/cantabile';
 
 const allActivities: ActivityInformation[] = [
 	crisp,
@@ -25,6 +26,7 @@ const allActivities: ActivityInformation[] = [
 	erveGetkot,
 	robKemperink,
 	kienhoes,
+	cantabile,
 ];
 
 export default allActivities;
