@@ -13,6 +13,7 @@ import robKemperink from './robKemperink/robKemperink';
 import kienhoes from './kienhoes/kienhoes';
 import cantabile from './cantabile/cantabile';
 import wolters from './wolters/wolters';
+import kosc from './kosc/kosc';
 
 const allActivities: ActivityInformation[] = [
 	crisp,
@@ -28,6 +29,7 @@ const allActivities: ActivityInformation[] = [
 	robKemperink,
 	kienhoes,
 	cantabile,
+	kosc,
 	wolters,
 ];
 
