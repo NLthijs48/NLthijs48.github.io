@@ -8,6 +8,7 @@ import happening from './happening/happening';
 import errorSink from './errorSink/errorSink';
 import interactiveMessenger from './interactiveMessenger/interactiveMessenger';
 import areaShop from './areaShop/areaShop';
+import erveGetkot from './erveGetkot/erveGetkot';
 
 const allActivities: ActivityInformation[] = [
 	crisp,
@@ -19,6 +20,7 @@ const allActivities: ActivityInformation[] = [
 	interactiveMessenger,
 	areaShop,
 	computerScienceBachelor,
+	erveGetkot,
 ];
 
 export default allActivities;
