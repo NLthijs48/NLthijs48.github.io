@@ -2,7 +2,7 @@ import {JobInformation} from '../ActivityInformation';
 import NightShelterIcon from '@mui/icons-material/NightShelter';
 import ActivityType from '../ActivityType';
 
-const erveGetkot: JobInformation = {
+const websiteErveGetkot: JobInformation = {
 	activityType: ActivityType.Job,
 	name: 'Erve Getkot',
 	description: 'Website for a place that rents out rural holiday apartments. Worked together with the designer Stef Heerink.',
@@ -12,4 +12,4 @@ const erveGetkot: JobInformation = {
 	website: 'https://www.ervegetkot.nl/',
 };
 
-export default erveGetkot;
+export default websiteErveGetkot;

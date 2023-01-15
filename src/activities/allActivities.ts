@@ -9,6 +9,7 @@ import errorSink from './errorSink/errorSink';
 import interactiveMessenger from './interactiveMessenger/interactiveMessenger';
 import areaShop from './areaShop/areaShop';
 import erveGetkot from './erveGetkot/erveGetkot';
+import robKemperink from './robKemperink/robKemperink';
 
 const allActivities: ActivityInformation[] = [
 	crisp,
@@ -21,6 +22,7 @@ const allActivities: ActivityInformation[] = [
 	areaShop,
 	computerScienceBachelor,
 	erveGetkot,
+	robKemperink,
 ];
 
 export default allActivities;
