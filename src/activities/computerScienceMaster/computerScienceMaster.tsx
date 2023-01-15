@@ -5,6 +5,7 @@ import ActivityType from '../ActivityType';
 import masterThesis from './masterThesis';
 import dataScienceTimeTabling from './dataScienceTimeTabling';
 import dataScienceGameTweets from './dataScienceGameTweets';
+import bachelorThesisFollowUp from './bachelorThesisFollowUp';
 
 const computerScienceMaster: EducationInformation = {
 	activityType: ActivityType.Education,
@@ -14,7 +15,7 @@ const computerScienceMaster: EducationInformation = {
 	till: 'March 2018', // Presentation and diploma on the 7th
 	Icon: SchoolIcon,
 	website: 'https://www.utwente.nl/en/education/master/programmes/computer-science/',
-	activities: [masterThesis, dataScienceTimeTabling, dataScienceGameTweets],
+	activities: [masterThesis, dataScienceTimeTabling, dataScienceGameTweets, bachelorThesisFollowUp],
 };
 
 export default computerScienceMaster;
