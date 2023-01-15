@@ -15,8 +15,8 @@ const allActivities: ActivityInformation[] = [
 	computerScienceMaster,
 	staying,
 	errorSink,
-	interactiveMessenger,
 	happening,
+	interactiveMessenger,
 	areaShop,
 	computerScienceBachelor,
 ];
