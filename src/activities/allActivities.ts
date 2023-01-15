@@ -10,6 +10,7 @@ import interactiveMessenger from './interactiveMessenger/interactiveMessenger';
 import areaShop from './areaShop/areaShop';
 import erveGetkot from './erveGetkot/erveGetkot';
 import robKemperink from './robKemperink/robKemperink';
+import kienhoes from './kienhoes/kienhoes';
 
 const allActivities: ActivityInformation[] = [
 	crisp,
@@ -23,6 +24,7 @@ const allActivities: ActivityInformation[] = [
 	computerScienceBachelor,
 	erveGetkot,
 	robKemperink,
+	kienhoes,
 ];
 
 export default allActivities;
