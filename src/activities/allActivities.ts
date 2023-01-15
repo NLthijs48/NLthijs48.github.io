@@ -7,6 +7,7 @@ import staying from './staying/staying';
 import happening from './happening/happening';
 import errorSink from './errorSink/errorSink';
 import interactiveMessenger from './interactiveMessenger/interactiveMessenger';
+import areaShop from './areaShop/areaShop';
 
 const allActivities: ActivityInformation[] = [
 	crisp,
@@ -16,6 +17,7 @@ const allActivities: ActivityInformation[] = [
 	errorSink,
 	interactiveMessenger,
 	happening,
+	areaShop,
 	computerScienceBachelor,
 ];
 
