@@ -8,7 +8,7 @@ function HomePage() {
 	return (
 		<div style={{height: '100%', backgroundColor: '#EEE', display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
 			<Header />
-			<main style={{width: '100%', maxWidth: 1000, paddingLeft: '2em', paddingRight: '2em', paddingBottom: '8em'}}>
+			<main style={{width: '100%', maxWidth: 1000, paddingLeft: '1em', paddingRight: '1em', paddingBottom: '8em'}}>
 				<div style={{display: 'flex', flexDirection: 'row', marginBottom: '4em'}}>
 					<img src={icon} className="App-logo" alt="Logo" style={{marginTop: '2em', height: '5em', width: '5em'}} />
 
