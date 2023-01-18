@@ -23,6 +23,7 @@ function Filters(props: FiltersProps) {
 				const isActive = props.activityType === activityType;
 				return (
 					<Button
+						key={activityType}
 						variant={isActive ? 'contained' : 'outlined'}
 						onClick={() => props.setActivityType(activityType)}
 						style={{color: isActive ? undefined : activityTypeColors[activityType]}}
