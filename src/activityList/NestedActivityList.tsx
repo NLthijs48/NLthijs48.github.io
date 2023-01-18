@@ -12,7 +12,7 @@ function NestedActivityList() {
 			<Filters activityType={activityTypeFilter} setActivityType={setActivityTypeFilter} style={{marginBottom: '1em'}} />
 
 			<FilterContext.Provider value={activityTypeFilter}>
-				<ActivityList activities={allActivities} />
+				<ActivityList activities={allActivities} hLevel={2} />
 			</FilterContext.Provider>
 		</div>
 	);

@@ -8,11 +8,16 @@ import ActivityList from './ActivityList';
 
 interface ActivityItemProps {
 	activity: ActivityInformation;
+	hLevel: 1 | 2 | 3 | 4 | 5 | 6;
 	style?: CSSProperties;
 }
 
 function ActivityItem(props: ActivityItemProps) {
 	const iconColor = activityTypeColors[props.activity.activityType];
+
+	// Use the h component suitable for the nesting level
+	// - TypeScript does not get this logic
+	const HeaderComponent: any = `h${props.hLevel}`;
 
 	return (
 		<div style={{marginBottom: '0.5em', display: 'flex', flexDirection: 'column', ...props.style}}>
@@ -46,7 +51,7 @@ function ActivityItem(props: ActivityItemProps) {
 					</div>
 				</Tooltip>
 
-				<h3
+				<HeaderComponent
 					style={{
 						fontSize: '1em',
 						margin: 0,
@@ -58,7 +63,7 @@ function ActivityItem(props: ActivityItemProps) {
 					}}
 				>
 					{props.activity.name}
-				</h3>
+				</HeaderComponent>
 			</Paper>
 
 			<div
@@ -75,7 +80,11 @@ function ActivityItem(props: ActivityItemProps) {
 				<TimePeriodIndicator activity={props.activity} />
 				<div style={{fontSize: '0.6em', marginTop: '0.5em'}}>{props.activity.description}</div>
 				{!!props.activity.activities && (
-					<ActivityList activities={props.activity.activities} style={{fontSize: '0.7em', marginTop: '0.5em'}} />
+					<ActivityList
+						activities={props.activity.activities}
+						style={{fontSize: '0.7em', marginTop: '0.5em'}}
+						hLevel={Math.min(6, props.hLevel + 1) as any}
+					/>
 				)}
 			</div>
 		</div>

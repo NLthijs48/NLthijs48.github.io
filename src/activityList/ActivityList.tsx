@@ -25,6 +25,7 @@ function activityMatchesFilter(activity: ActivityInformation, filter: null | Act
 
 interface ActivityListProps {
 	activities: ActivityInformation[];
+	hLevel: 1 | 2 | 3 | 4 | 5 | 6;
 	style?: CSSProperties;
 }
 function ActivityList(props: ActivityListProps) {
@@ -34,7 +35,7 @@ function ActivityList(props: ActivityListProps) {
 	return (
 		<div style={props.style}>
 			{activities.map((activity, index) => (
-				<ActivityItem key={index} activity={activity} />
+				<ActivityItem key={index} activity={activity} hLevel={props.hLevel} />
 			))}
 		</div>
 	);
