@@ -14,6 +14,7 @@ import kienhoes from './kienhoes/kienhoes';
 import cantabile from './cantabile/cantabile';
 import wolters from './wolters/wolters';
 import kosc from './kosc/kosc';
+import goCraft from './goCraft/goCraft';
 
 const allActivities: ActivityInformation[] = [
 	crisp,
@@ -25,6 +26,7 @@ const allActivities: ActivityInformation[] = [
 	interactiveMessenger,
 	areaShop,
 	computerScienceBachelor,
+	goCraft,
 	erveGetkot,
 	robKemperink,
 	kienhoes,
