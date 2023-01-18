@@ -54,6 +54,7 @@ function ActivityItem(props: ActivityItemProps) {
 						whiteSpace: 'nowrap',
 						textOverflow: 'ellipsis',
 						overflow: 'hidden',
+						flex: 1,
 					}}
 				>
 					{props.activity.name}
