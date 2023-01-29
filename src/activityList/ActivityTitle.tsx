@@ -20,7 +20,6 @@ function ActivityTitle(props: ActivityTitleProps) {
 				whiteSpace: 'nowrap',
 				textOverflow: 'ellipsis',
 				overflow: 'hidden',
-				flex: 1,
 			}}
 		>
 			{props.activity.name}
@@ -29,7 +28,7 @@ function ActivityTitle(props: ActivityTitleProps) {
 	// Add link to the website
 	if (props.activity.website) {
 		return (
-			<a href={props.activity.website} target="_blank" rel="noopener noreferrer" style={{color: 'inherit'}}>
+			<a href={props.activity.website} target="_blank" rel="noopener noreferrer" style={{color: 'inherit', flex: 1, minWidth: 0}}>
 				{header}
 			</a>
 		);
