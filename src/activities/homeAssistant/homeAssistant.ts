@@ -4,7 +4,7 @@ import ActivityType from '../ActivityType';
 
 const homeAssistant: HobbyInformation = {
 	activityType: ActivityType.Hobby,
-	name: 'Home Assistant',
+	name: 'Home Assistant dashboard',
 	description: 'Automating my home: lighting, home cinema, electricity usage.',
 	from: '2020',
 	Icon: HomeIcon,

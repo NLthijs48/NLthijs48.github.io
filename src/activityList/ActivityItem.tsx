@@ -5,6 +5,7 @@ import TimePeriodIndicator from './TimePeriodIndicator';
 import {activityTypeColors, activityTypeDescriptions} from '../activities/ActivityType';
 import Tooltip from '@mui/material/Tooltip';
 import ActivityList from './ActivityList';
+import ActivityTitle from './ActivityTitle';
 
 interface ActivityItemProps {
 	activity: ActivityInformation;
@@ -14,11 +15,6 @@ interface ActivityItemProps {
 
 function ActivityItem(props: ActivityItemProps) {
 	const iconColor = activityTypeColors[props.activity.activityType];
-
-	// Use the h component suitable for the nesting level
-	// - TypeScript does not get this logic
-	const HeaderComponent: any = `h${props.hLevel}`;
-
 	return (
 		<div style={{marginBottom: '0.5em', display: 'flex', flexDirection: 'column', ...props.style}}>
 			<Paper
@@ -51,19 +47,7 @@ function ActivityItem(props: ActivityItemProps) {
 					</div>
 				</Tooltip>
 
-				<HeaderComponent
-					style={{
-						fontSize: '1em',
-						margin: 0,
-						padding: '0em 0.5em 0em 0.5em',
-						whiteSpace: 'nowrap',
-						textOverflow: 'ellipsis',
-						overflow: 'hidden',
-						flex: 1,
-					}}
-				>
-					{props.activity.name}
-				</HeaderComponent>
+				<ActivityTitle activity={props.activity} hLevel={props.hLevel} />
 			</Paper>
 
 			<div
