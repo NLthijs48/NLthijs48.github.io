@@ -15,6 +15,7 @@ import cantabile from './cantabile/cantabile';
 import wolters from './wolters/wolters';
 import kosc from './kosc/kosc';
 import goCraft from './goCraft/goCraft';
+import playerWarps from './playerWarps/playerWarps';
 
 const allActivities: ActivityInformation[] = [
 	crisp,
@@ -23,6 +24,7 @@ const allActivities: ActivityInformation[] = [
 	staying,
 	errorSink,
 	happening,
+	playerWarps,
 	interactiveMessenger,
 	areaShop,
 	computerScienceBachelor,
