@@ -20,8 +20,8 @@ import playerWarps from './playerWarps/playerWarps';
 const allActivities: ActivityInformation[] = [
 	crisp,
 	homeAssistant,
-	computerScienceMaster,
 	staying,
+	computerScienceMaster,
 	errorSink,
 	happening,
 	playerWarps,
