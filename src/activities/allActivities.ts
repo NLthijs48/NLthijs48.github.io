@@ -16,6 +16,7 @@ import wolters from './wolters/wolters';
 import kosc from './kosc/kosc';
 import goCraft from './goCraft/goCraft';
 import playerWarps from './playerWarps/playerWarps';
+import paiq from './paiq/paiq';
 
 const allActivities: ActivityInformation[] = [
 	crisp,
@@ -23,6 +24,7 @@ const allActivities: ActivityInformation[] = [
 	staying,
 	computerScienceMaster,
 	errorSink,
+	paiq,
 	happening,
 	playerWarps,
 	interactiveMessenger,
