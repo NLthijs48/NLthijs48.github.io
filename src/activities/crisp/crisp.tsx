@@ -4,6 +4,12 @@ import AgricultureIcon from '@mui/icons-material/Agriculture';
 import PersonIcon from '@mui/icons-material/Person';
 import React from 'react';
 import ActivityType from '../ActivityType';
+import launch from './launch';
+import pickIntoPackaging from './pickIntoPackaging';
+import recipes from './recipes';
+import multiOrderPick from './multiOrderPick';
+import multiWarehouse from './multiWarehouse';
+import international from './international';
 
 const crisp: JobInformation = {
 	activityType: ActivityType.Job,
@@ -16,14 +22,15 @@ const crisp: JobInformation = {
 			customer.
 			<div style={{marginTop: '0.5em'}}>
 				I worked on the consumer grocery ordering app (initial setup and recipe feature in particular), the internal portal for
-				managing all data, and have built a bit set of warehouse tools (product availability calculation, automatic purchasing,
-				label printing, multiple picking system iterations).
+				managing all data, and a ton of warehouse and logistics tools (product availability calculation, automatic purchasing, label
+				printing, multiple picking system iterations).
 			</div>
 		</div>
 	),
 	from: 'April 2018',
 	Icon: BakeryDiningIcon,
 	website: 'https://crisp.nl',
+	activities: [multiWarehouse, international, multiOrderPick, recipes, pickIntoPackaging, launch],
 };
 
 export default crisp;
