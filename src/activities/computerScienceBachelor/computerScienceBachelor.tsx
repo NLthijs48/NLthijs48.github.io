@@ -4,6 +4,7 @@ import React from 'react';
 import ActivityType from '../ActivityType';
 import conquest from './conquest';
 import bachelorThesis from './bachelorThesis';
+import minor from './minor';
 
 const computerScienceBachelor: EducationInformation = {
 	activityType: ActivityType.Education,
@@ -13,7 +14,7 @@ const computerScienceBachelor: EducationInformation = {
 	till: 'September 2015', // Got the diploma on the 11th
 	Icon: SchoolIcon,
 	website: 'https://www.utwente.nl/en/education/bachelor/programmes/technical-computer-science/',
-	activities: [bachelorThesis, conquest],
+	activities: [bachelorThesis, conquest, minor],
 };
 
 export default computerScienceBachelor;
