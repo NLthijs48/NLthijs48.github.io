@@ -16,7 +16,7 @@ const thales: EducationInformation = {
 	from: 'September 2016',
 	till: 'February 2017',
 	Icon: WhatshotIcon,
-	// Source is in a private repository, will not be made public
+	// Source is in a private repository, will not be made public: https://github.com/NLthijs48/ThalesChaosMonkey
 	website: 'https://www.thalesgroup.com/',
 };
 
