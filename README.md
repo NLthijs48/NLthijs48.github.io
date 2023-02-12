@@ -1,3 +1,5 @@
+[![Deploy to Github Pages](https://github.com/NLthijs48/NLthijs48.github.io/actions/workflows/deploy.yml/badge.svg)](https://github.com/NLthijs48/NLthijs48.github.io/actions/workflows/deploy.yml)
+
 # Homepage of Thijs Wiefferink
 
 This repository contains the code used for my personal website.
