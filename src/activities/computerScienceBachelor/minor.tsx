@@ -3,7 +3,7 @@ import FlightIcon from '@mui/icons-material/Flight';
 import React from 'react';
 import ActivityType from '../ActivityType';
 
-const commitLog: EducationInformation = {
+const minor: EducationInformation = {
 	activityType: ActivityType.Education,
 	name: 'Minor: aeronautical engineering',
 	description: (
@@ -17,4 +17,4 @@ const commitLog: EducationInformation = {
 	Icon: FlightIcon,
 };
 
-export default commitLog;
+export default minor;

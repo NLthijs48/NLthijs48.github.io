@@ -1,7 +1,7 @@
 import React from 'react';
 import Button from '@mui/material/Button';
-import Link from '@mui/material/Link';
 import {AppBar, Toolbar} from '@mui/material';
+import ExternalLink from './ExternalLink';
 
 /** Header at the top of the page */
 function Header() {
@@ -30,7 +30,7 @@ interface ExternalLinkButtonProps {
 
 function ExternalLinkButton(props: ExternalLinkButtonProps) {
 	return (
-		<Link href={props.href} target="_blank" rel="noopener noreferrer" underline="none">
+		<ExternalLink href={props.href} underline="none">
 			<Button
 				variant="outlined"
 				style={{
@@ -42,7 +42,7 @@ function ExternalLinkButton(props: ExternalLinkButtonProps) {
 			>
 				{props.children}
 			</Button>
-		</Link>
+		</ExternalLink>
 	);
 }
 
