@@ -5,6 +5,7 @@ import ActivityType from '../ActivityType';
 const interactiveMessenger: HobbyInformation = {
 	activityType: ActivityType.Hobby,
 	name: 'InteractiveMessenger',
+	slug: 'interactiveMessenger',
 	description: 'Message translation and formatting library for Minecraft server plugins',
 	// Started this project with https://github.com/PhoenixIV, shout him out in the full description later
 	from: 'November 2014',

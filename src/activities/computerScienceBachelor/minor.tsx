@@ -5,6 +5,7 @@ import ActivityType from '../ActivityType';
 
 const minor: EducationInformation = {
 	activityType: ActivityType.Education,
+	slug: 'computerScienceMinor',
 	name: 'Minor: aeronautical engineering',
 	description: (
 		<div>

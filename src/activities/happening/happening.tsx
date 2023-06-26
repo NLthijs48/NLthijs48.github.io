@@ -2,7 +2,7 @@ import {JobInformation} from '../ActivityInformation';
 import QuestionAnswerIcon from '@mui/icons-material/QuestionAnswer';
 import React from 'react';
 import ActivityType from '../ActivityType';
-import battleWords from './battleWords';
+import battleWords from './battleWords/battleWords';
 import splitTheBill from './splitTheBill';
 import whereabouts from './whereabouts';
 import commitLog from './commitLog';
@@ -10,6 +10,7 @@ import commitLog from './commitLog';
 const happening: JobInformation = {
 	activityType: ActivityType.Job,
 	name: 'Happening',
+	slug: 'happening',
 	description: (
 		<div>
 			I was a developer at Happening, helping to improve the core of this group chat app, and writing games and tools that can be used

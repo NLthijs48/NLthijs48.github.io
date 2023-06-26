@@ -10,6 +10,7 @@ import thales from './thales';
 
 const computerScienceMaster: EducationInformation = {
 	activityType: ActivityType.Education,
+	slug: 'computerScienceMaster',
 	name: 'Computer Science Master',
 	description: <div>Master education at the University of Twente.</div>,
 	from: 'September 2015', // Started on the 1st

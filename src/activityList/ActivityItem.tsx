@@ -1,10 +1,8 @@
-import Paper from '@mui/material/Paper';
 import React, {CSSProperties} from 'react';
 import ActivityInformation from '../activities/ActivityInformation';
 import TimePeriodIndicator from './TimePeriodIndicator';
-import {activityTypeColors, activityTypeDescriptions} from '../activities/ActivityType';
-import Tooltip from '@mui/material/Tooltip';
 import ActivityList from './ActivityList';
+import ActivityDetailsButton from './ActivityDetailsButton';
 import ActivityTitle from './ActivityTitle';
 
 interface ActivityItemProps {
@@ -14,41 +12,9 @@ interface ActivityItemProps {
 }
 
 function ActivityItem(props: ActivityItemProps) {
-	const iconColor = activityTypeColors[props.activity.activityType];
 	return (
 		<div style={{marginBottom: '0.5em', display: 'flex', flexDirection: 'column', ...props.style}}>
-			<Paper
-				elevation={3}
-				style={{
-					backgroundColor: 'white',
-					padding: 0,
-					height: '2em',
-					borderRadius: '1em',
-					display: 'flex',
-					flexDirection: 'row',
-					alignItems: 'center',
-				}}
-			>
-				<Tooltip title={activityTypeDescriptions[props.activity.activityType]}>
-					<div
-						style={{
-							width: '2em',
-							height: '2em',
-							display: 'flex',
-							alignItems: 'center',
-							justifyContent: 'center',
-							backgroundColor: iconColor,
-							marginTop: 0,
-							borderRadius: '50%',
-							color: 'white',
-						}}
-					>
-						<props.activity.Icon style={{fontSize: '1.3em'}} />
-					</div>
-				</Tooltip>
-
-				<ActivityTitle activity={props.activity} hLevel={props.hLevel} />
-			</Paper>
+			<ActivityTitle activity={props.activity} hLevel={props.hLevel} />
 
 			<div
 				style={{
@@ -70,6 +36,7 @@ function ActivityItem(props: ActivityItemProps) {
 						hLevel={Math.min(6, props.hLevel + 1) as any}
 					/>
 				)}
+				{!!props.activity.highlights && <ActivityDetailsButton activity={props.activity}></ActivityDetailsButton>}
 			</div>
 		</div>
 	);

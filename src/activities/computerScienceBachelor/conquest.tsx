@@ -3,8 +3,9 @@ import PlaceIcon from '@mui/icons-material/Place';
 import React from 'react';
 import ActivityType from '../ActivityType';
 
-const commitLog: EducationInformation = {
+const conquest: EducationInformation = {
 	activityType: ActivityType.Education,
+	slug: 'happeningConquest',
 	name: 'Happening: Conquest',
 	description: (
 		<div>
@@ -20,4 +21,4 @@ const commitLog: EducationInformation = {
 	website: 'https://github.com/NLthijs48/cappening',
 };
 
-export default commitLog;
+export default conquest;

@@ -1,46 +1,46 @@
 import React from 'react';
-import icon from './images/icon-animated.svg';
-import Link from '@mui/material/Link';
-import NestedActivityList from './activityList/NestedActivityList';
 import Header from './components/Header';
+import HomePage from './pages/HomePage';
+import {useActivitySelect} from './activityDetail/ActivitySelect';
+import ActivityPage from './pages/ActivityPage';
 
 export enum LayoutMode {
 	Desktop,
 	Mobile,
 }
 
-function HomePage() {
+function PageWrapper() {
 	const layoutMode = useLayoutMode();
 	const sideSpace = layoutMode === LayoutMode.Mobile ? '1em' : '2em';
 
+	const {activity} = useActivitySelect();
+
 	return (
-		<div style={{height: '100%', width: '100%', backgroundColor: '#EEE', display: 'flex', flexDirection: 'row', alignItems: 'stretch'}}>
+		<div
+			style={{
+				height: '100%',
+				width: '100%',
+				backgroundColor: '#EEE',
+				display: 'flex',
+				flexDirection: 'row',
+				alignItems: 'stretch',
+			}}
+		>
 			<div style={{height: '100%', width: '100%', display: 'flex', flexDirection: 'column'}}>
 				<Header layoutMode={layoutMode} />
 				<div style={{flex: 1, minWidth: 0, display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
-					<main style={{width: '100%', maxWidth: 1000, paddingLeft: sideSpace, paddingRight: sideSpace, paddingBottom: '8em'}}>
-						<div
-							style={{
-								display: 'flex',
-								flexDirection: 'row',
-								marginBottom: '4em',
-								marginTop: sideSpace,
-							}}
-						>
-							<img src={icon} className="App-logo" alt="Logo" style={{height: '5em', width: '5em', marginTop: '0.2em'}} />
-
-							<div style={{flex: 1, marginLeft: '2em'}}>
-								<h1 style={{marginTop: 0, marginBottom: '0.5em'}}>Hey, I'm Thijs!</h1>
-								<div style={{fontSize: 24, lineHeight: '110%'}}>
-									A full stack Software developer working at{' '}
-									<Link href="https://crisp.nl" target="_blank" rel="noopener noreferrer">
-										Crisp
-									</Link>
-								</div>
-							</div>
-						</div>
-
-						<NestedActivityList />
+					<main
+						style={{
+							width: '100%',
+							maxWidth: 1000,
+							paddingLeft: sideSpace,
+							paddingRight: sideSpace,
+							paddingTop: sideSpace,
+							paddingBottom: '8em',
+						}}
+					>
+						{!activity && <HomePage />}
+						{activity && <ActivityPage activity={activity} />}
 					</main>
 				</div>
 			</div>
@@ -72,4 +72,4 @@ function useLayoutMode(): LayoutMode {
 	return layoutMode;
 }
 
-export default HomePage;
+export default PageWrapper;

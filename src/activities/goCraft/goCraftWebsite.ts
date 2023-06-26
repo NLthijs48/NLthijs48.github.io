@@ -5,6 +5,7 @@ import ActivityType from '../ActivityType';
 const goCraftPlugin: HobbyInformation = {
 	activityType: ActivityType.Hobby,
 	name: 'Website',
+	slug: 'goCraftWebsite',
 	description:
 		'Website showing maps of the in-game world, live-views of players in the game, and related features. Using a React+TypeScript front-end, WordPress backend for content, websocket api for in-game data.',
 	from: 'April 2017',

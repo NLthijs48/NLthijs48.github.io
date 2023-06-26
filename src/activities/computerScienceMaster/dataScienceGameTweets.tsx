@@ -6,6 +6,7 @@ import ActivityType from '../ActivityType';
 const dataScienceGameTweets: EducationInformation = {
 	activityType: ActivityType.Education,
 	name: 'Data Science: game release tweets analysis',
+	slug: 'dataScienceGameTweets',
 	description: <div>Assignment for the Managing Big Data course in which a huge Twitter dataset is analyzed using MapReduce</div>,
 	from: 'January 2016',
 	till: 'January 2016',

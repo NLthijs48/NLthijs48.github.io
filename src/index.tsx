@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import HomePage from './HomePage';
+import PageWrapper from './PageWrapper';
 import reportWebVitals from './reportWebVitals';
 import {CssBaseline, ThemeProvider} from '@mui/material';
 import '@fontsource/roboto/300.css';
@@ -8,6 +8,7 @@ import '@fontsource/roboto/400.css';
 import '@fontsource/roboto/500.css';
 import '@fontsource/roboto/700.css';
 import theme from './theme';
+import {ActivitySelectProvider} from './activityDetail/ActivitySelect';
 
 // https://mui.com/material-ui/getting-started/installation/
 // TODO: Sentry
@@ -17,7 +18,9 @@ root.render(
 	<React.StrictMode>
 		<ThemeProvider theme={theme}>
 			<CssBaseline />
-			<HomePage />
+			<ActivitySelectProvider>
+				<PageWrapper />
+			</ActivitySelectProvider>
 		</ThemeProvider>
 	</React.StrictMode>
 );

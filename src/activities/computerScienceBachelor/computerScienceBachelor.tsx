@@ -8,6 +8,7 @@ import minor from './minor';
 
 const computerScienceBachelor: EducationInformation = {
 	activityType: ActivityType.Education,
+	slug: 'computerScienceBachelor',
 	name: 'Computer Science Bachelor',
 	description: <div>Bachelor education at the University of Twente.</div>,
 	from: 'September 2012', // Started 1st of September

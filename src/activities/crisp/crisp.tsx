@@ -14,6 +14,7 @@ import international from './international';
 const crisp: JobInformation = {
 	activityType: ActivityType.Job,
 	name: 'Crisp',
+	slug: 'crisp',
 	description: (
 		<div>
 			Revamping the food logistics chain from{' '}

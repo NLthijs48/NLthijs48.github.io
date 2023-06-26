@@ -5,6 +5,7 @@ import ActivityType from '../ActivityType';
 const paiq: JobInformation = {
 	activityType: ActivityType.Job,
 	name: 'Paiq',
+	slug: 'paiq',
 	description: 'Dating platform where I helped with a new font-end using a reactive framework and an updated online SpeedDate system.',
 	from: 'August 2016',
 	till: 'January 2017',

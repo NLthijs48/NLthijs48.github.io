@@ -5,6 +5,7 @@ import ActivityType from '../ActivityType';
 const errorSink: HobbyInformation = {
 	activityType: ActivityType.Hobby,
 	name: 'ErrorSink',
+	slug: 'minecraftErrorSink',
 	description:
 		'Collect Minecraft server errors on Sentry.io, making available rich bug reports to Sentry, with plenty of configuration to fine-tune it.',
 	from: 'May 2017',

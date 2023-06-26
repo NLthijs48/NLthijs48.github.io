@@ -6,6 +6,7 @@ import ActivityType from '../ActivityType';
 const splitTheBill: JobInformation = {
 	activityType: ActivityType.Job,
 	name: 'SplitTheBill',
+	slug: 'happeningSplitTheBill',
 	description: (
 		<div>
 			App to keep track of who owes money to whom. I upgraded it from a simple initial version to a fully fledged app with transaction

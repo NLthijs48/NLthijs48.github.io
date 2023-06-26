@@ -5,6 +5,7 @@ import ActivityType from '../ActivityType';
 
 const bachelorThesis: EducationInformation = {
 	activityType: ActivityType.Education,
+	slug: 'computerScienceBachelorThesis',
 	name: 'Bachelor thesis: OpenCL verification',
 	description: (
 		<div>

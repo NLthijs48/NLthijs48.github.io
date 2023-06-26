@@ -6,6 +6,7 @@ import ActivityType from '../ActivityType';
 const bachelorThesisFollowUp: EducationInformation = {
 	activityType: ActivityType.Education,
 	name: 'Parallel prefix sum verification with VerCors',
+	slug: 'computerSciencePrefixSum',
 	description: (
 		<div>
 			As follow-up of my Bachelor paper I continued with the verification of the parallel prefix sum verification with the VerCors

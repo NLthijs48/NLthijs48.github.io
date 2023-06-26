@@ -7,6 +7,7 @@ import ExternalLink from '../../components/ExternalLink';
 const thales: EducationInformation = {
 	activityType: ActivityType.Education,
 	name: 'Thales: chaos monkey',
+	slug: 'thalesChaosMonkey',
 	description: (
 		<div>
 			Assignment at Thales to create a chaos monkey for their distributed software system, inspired by{' '}

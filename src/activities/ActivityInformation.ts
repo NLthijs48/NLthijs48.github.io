@@ -1,9 +1,12 @@
 import SvgIcon from '@mui/material/SvgIcon';
 import * as React from 'react';
 import ActivityType from './ActivityType';
+import Highlight from './Highlight';
 
 interface ActivityInformationBase {
 	activityType: ActivityType;
+	/** Unique identifier used in the url */
+	slug: string;
 	/**
 	 * Name of the activity
 	 * - with proper capitalization
@@ -38,6 +41,9 @@ s	 * - year-month
 
 	/** Activities done during this activity */
 	activities?: ActivityInformation[];
+
+	/** Highlights about this activity */
+	highlights?: Highlight[];
 }
 
 export interface EducationInformation extends ActivityInformationBase {

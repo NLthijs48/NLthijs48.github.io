@@ -5,6 +5,7 @@ import ActivityType from '../ActivityType';
 const multiWarehouse: JobInformation = {
 	activityType: ActivityType.Job,
 	name: 'Multi-warehouse support',
+	slug: 'crispMultiWarehouse',
 	description: (
 		<div>
 			Added support for multiple warehouses in a single country, supporting major growth of the company. I tackled this project
