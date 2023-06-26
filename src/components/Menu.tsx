@@ -68,18 +68,18 @@ function ButtonMenu(props: ButtonMenuProps) {
 				width: props.layout === 'vertical' ? 250 : undefined,
 			}}
 		>
-			{menuContent.map((menuItem) => {
+			{menuContent.map((menuItem, index) => {
 				switch (menuItem.type) {
 					case 'link':
 						return (
-							<ExternalLink href={menuItem.href} underline="none">
+							<ExternalLink href={menuItem.href} underline="none" key={index}>
 								<MenuButton layout={props.layout} Icon={menuItem.Icon}>
 									{menuItem.name}
 								</MenuButton>
 							</ExternalLink>
 						);
 					case 'email':
-						return <EmailItem menuItem={menuItem} layout={props.layout} />;
+						return <EmailItem menuItem={menuItem} layout={props.layout} key={index} />;
 				}
 
 				// Shoul never reach
