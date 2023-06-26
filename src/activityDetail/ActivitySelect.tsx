@@ -1,4 +1,4 @@
-import React, {createContext, ReactNode, useContext, useState} from 'react';
+import React, {createContext, ReactNode, useContext, useEffect, useState} from 'react';
 import ActivityInformation from '../activities/ActivityInformation';
 import allActivities from '../activities/allActivities';
 
@@ -16,6 +16,7 @@ interface ActivitySelectProps {
 export function ActivitySelectProvider(props: ActivitySelectProps) {
 	const [activity, setActivity] = useState<null | ActivityInformation>(getActivityFromUrl());
 
+	// Setter for updating the url and React state
 	const setActivityAndUrl = React.useCallback(
 		(newActivity: null | ActivityInformation) => {
 			const url = new URL(window.location.href);
@@ -27,11 +28,30 @@ export function ActivitySelectProvider(props: ActivitySelectProps) {
 				url.searchParams.delete(URL_PARAMETER);
 			}
 
-			// Update the url parameter in-place, without reloading the page
-			window.history.replaceState({}, 'Home', url);
+			// Update the url parameter, adding a history entry
+			const title = newActivity ? newActivity.name : 'Home';
+			window.history.pushState({activity: newActivity ? newActivity.slug : null}, title, url);
+			// Update the title (pushState title is not used in most browsers)
+			document.title = title;
+			// Scroll to the top
+			if (newActivity) {
+				window.scrollTo({top: 0});
+			}
 		},
 		[setActivity]
 	);
+
+	// Update when user browser forward/back
+	useEffect(() => {
+		const onPopstate = (event: PopStateEvent) => {
+			const newActivitySlug = event.state?.activity ?? null;
+			const newActivity = newActivitySlug ? getActivityBySlug(newActivitySlug) : null;
+			// TODO: update title?
+			setActivity(newActivity);
+		};
+		window.addEventListener('popstate', onPopstate);
+		return () => window.removeEventListener('popstate', onPopstate);
+	}, [setActivity]);
 
 	return (
 		<ActivitySelectContext.Provider value={{activity, setActivity: setActivityAndUrl}}>{props.children}</ActivitySelectContext.Provider>
