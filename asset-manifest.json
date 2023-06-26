@@ -1,12 +1,19 @@
 {
   "files": {
     "main.css": "/static/css/main.ec2afee5.css",
-    "main.js": "/static/js/main.5203b515.js",
+    "main.js": "/static/js/main.b82945f7.js",
     "static/js/787.5809834d.chunk.js": "/static/js/787.5809834d.chunk.js",
     "static/media/roboto-all-500-normal.woff": "/static/media/roboto-all-500-normal.0ab669b7a0d19b178f57.woff",
     "static/media/roboto-all-700-normal.woff": "/static/media/roboto-all-700-normal.a457fde362a540fcadff.woff",
     "static/media/roboto-all-400-normal.woff": "/static/media/roboto-all-400-normal.c5d001fa922fa66a147f.woff",
     "static/media/roboto-all-300-normal.woff": "/static/media/roboto-all-300-normal.168d6383e73339293ac3.woff",
+    "static/media/scoreboard.png": "/static/media/scoreboard.5a365eac475572e425c9.png",
+    "static/media/previousRounds.png": "/static/media/previousRounds.b48c71c3b242fde6b207.png",
+    "static/media/endOfRound.png": "/static/media/endOfRound.72f18f77d12132f8b86f.png",
+    "static/media/creatingWords.png": "/static/media/creatingWords.206615377079364502e1.png",
+    "static/media/theGame.png": "/static/media/theGame.ac99df13077511c18746.png",
+    "static/media/swappingLetters.png": "/static/media/swappingLetters.a25c65320f14eecc5c97.png",
+    "static/media/settings.png": "/static/media/settings.15ea2ec22e945270d334.png",
     "static/media/roboto-latin-500-normal.woff2": "/static/media/roboto-latin-500-normal.f25d774ecfe0996f8eb5.woff2",
     "static/media/roboto-latin-700-normal.woff2": "/static/media/roboto-latin-700-normal.227c93190fe7f82de3f8.woff2",
     "static/media/roboto-latin-400-normal.woff2": "/static/media/roboto-latin-400-normal.b009a76ad6afe4ebd301.woff2",
@@ -38,11 +45,11 @@
     "static/media/roboto-greek-ext-700-normal.woff2": "/static/media/roboto-greek-ext-700-normal.bd9854c751441ccc1a70.woff2",
     "index.html": "/index.html",
     "main.ec2afee5.css.map": "/static/css/main.ec2afee5.css.map",
-    "main.5203b515.js.map": "/static/js/main.5203b515.js.map",
+    "main.b82945f7.js.map": "/static/js/main.b82945f7.js.map",
     "787.5809834d.chunk.js.map": "/static/js/787.5809834d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ec2afee5.css",
-    "static/js/main.5203b515.js"
+    "static/js/main.b82945f7.js"
   ]
 }
