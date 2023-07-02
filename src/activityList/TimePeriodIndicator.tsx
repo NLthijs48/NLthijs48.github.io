@@ -6,7 +6,11 @@ import AllInclusive from '@mui/icons-material/AllInclusive';
 import React from 'react';
 import Tooltip from '@mui/material/Tooltip';
 
-function TimePeriodIndicator(props: {activity: ActivityInformation}) {
+interface TimePeriodIndicatorProps {
+	activity: ActivityInformation;
+}
+
+function TimePeriodIndicator(props: TimePeriodIndicatorProps) {
 	// Only showing 1 date when from and till are the same
 	const oneDate = props.activity.from === props.activity.till;
 	const FromIcon = oneDate ? CalendarMonth : PlayArrow;
