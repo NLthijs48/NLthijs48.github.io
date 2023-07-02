@@ -3,9 +3,10 @@ import ActivityInformation from '../activities/ActivityInformation';
 import ActivityTitle from '../activityList/ActivityTitle';
 import HighlightItem from '../components/HighlightItem';
 import TimePeriodIndicator from '../activityList/TimePeriodIndicator';
+import Breadcrumbs from '../components/Breadcrumbs';
 
 // TODO: home page button
-// TODO: breadcrumbs (if any)
+// TODO: add list of sub-activities
 
 interface ActivityPageProps {
 	activity: ActivityInformation;
@@ -13,6 +14,10 @@ interface ActivityPageProps {
 function ActivityPage(props: ActivityPageProps) {
 	return (
 		<div>
+			<Breadcrumbs
+				toActivity={props.activity}
+				style={{paddingLeft: '2.2em', paddingRight: '2.2em', opacity: 0.7, fontSize: '1.2em'}}
+			/>
 			<div style={{fontSize: '2em'}}>
 				<ActivityTitle activity={props.activity} hLevel={1} />
 				<div style={{paddingLeft: '2.5em'}}>

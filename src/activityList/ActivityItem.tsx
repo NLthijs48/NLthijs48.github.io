@@ -4,6 +4,7 @@ import TimePeriodIndicator from './TimePeriodIndicator';
 import ActivityList from './ActivityList';
 import ActivityDetailsButton from './ActivityDetailsButton';
 import ActivityTitle from './ActivityTitle';
+import {ButtonBase} from '@mui/material';
 
 interface ActivityItemProps {
 	activity: ActivityInformation;
@@ -12,9 +13,25 @@ interface ActivityItemProps {
 }
 
 function ActivityItem(props: ActivityItemProps) {
+	let title = <ActivityTitle activity={props.activity} hLevel={props.hLevel} />;
+
+	// Add link to the website
+	if (props.activity.website) {
+		title = (
+			<ButtonBase
+				href={props.activity.website}
+				target="_blank"
+				rel="noopener noreferrer"
+				style={{display: 'block', textDecoration: 'underline', borderRadius: '1em'}}
+			>
+				{title}
+			</ButtonBase>
+		);
+	}
+
 	return (
 		<div style={{marginBottom: '0.5em', display: 'flex', flexDirection: 'column', ...props.style}}>
-			<ActivityTitle activity={props.activity} hLevel={props.hLevel} />
+			{title}
 
 			<div
 				style={{

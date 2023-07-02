@@ -37,6 +37,7 @@ function ActivityTitle(props: ActivityTitleProps) {
 						marginTop: 0,
 						borderRadius: '50%',
 						color: 'white',
+						flexShrink: 0,
 					}}
 				>
 					<props.activity.Icon style={{fontSize: '1.3em'}} />

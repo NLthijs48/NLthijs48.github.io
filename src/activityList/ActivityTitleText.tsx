@@ -11,7 +11,7 @@ function ActivityTitleText(props: ActivityTitleProps) {
 	// - TypeScript does not get this logic
 	const HeaderComponent: any = `h${props.hLevel}`;
 
-	const header = (
+	return (
 		<HeaderComponent
 			style={{
 				fontSize: '1em',
@@ -25,16 +25,6 @@ function ActivityTitleText(props: ActivityTitleProps) {
 			{props.activity.name}
 		</HeaderComponent>
 	);
-	// Add link to the website
-	if (props.activity.website) {
-		return (
-			<a href={props.activity.website} target="_blank" rel="noopener noreferrer" style={{color: 'inherit', flex: 1, minWidth: 0}}>
-				{header}
-			</a>
-		);
-	}
-
-	return header;
 }
 
 export default ActivityTitleText;
