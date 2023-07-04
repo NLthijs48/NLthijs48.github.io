@@ -8,6 +8,7 @@ import Tooltip from '@mui/material/Tooltip';
 
 interface TimePeriodIndicatorProps {
 	activity: ActivityInformation;
+	style?: React.CSSProperties;
 }
 
 function TimePeriodIndicator(props: TimePeriodIndicatorProps) {
@@ -22,6 +23,7 @@ function TimePeriodIndicator(props: TimePeriodIndicatorProps) {
 				marginTop: '0.5em',
 				display: 'flex',
 				alignItems: 'center',
+				...props.style,
 			}}
 		>
 			<Tooltip title={oneDate ? 'Started and finished on' : 'Started on'}>

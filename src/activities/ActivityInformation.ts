@@ -5,17 +5,22 @@ import Highlight from './Highlight';
 
 interface ActivityInformationBase {
 	activityType: ActivityType;
+
 	/** Unique identifier used in the url */
 	slug: string;
+
 	/**
 	 * Name of the activity
 	 * - with proper capitalization
 	 */
 	name: string;
+
+	// TODO: separate 'caption' (single line) and description (multi-line)
 	/**
 	 * Single line that describes it
 	 */
 	description: React.ReactNode;
+
 	/**
 	 * Icon that represents the activity
 	 * https://mui.com/material-ui/material-icons/
@@ -36,6 +41,7 @@ s	 * - year-month
 	 */
 	till?: string;
 
+	// TODO: move this to the 'highlights' list instead? Or a dedicated urls list
 	/** Website that is most relevant */
 	website?: string;
 

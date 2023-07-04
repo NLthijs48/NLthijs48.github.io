@@ -1,6 +1,6 @@
 import icon from '../images/icon-animated.svg';
 import Link from '@mui/material/Link';
-import NestedActivityList from '../activityList/NestedActivityList';
+import FilteredActivityList from '../activityList/FilteredActivityList';
 import React from 'react';
 
 function HomePage() {
@@ -26,7 +26,7 @@ function HomePage() {
 				</div>
 			</div>
 
-			<NestedActivityList />
+			<FilteredActivityList />
 		</>
 	);
 }

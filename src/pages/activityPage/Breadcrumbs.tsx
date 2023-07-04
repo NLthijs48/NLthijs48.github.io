@@ -1,10 +1,10 @@
-import {useActivitySelect} from '../activityDetail/ActivitySelect';
+import {useActivitySelect} from '../../activityItem/ActivitySelect';
 import React from 'react';
-import allActivities from '../activities/allActivities';
+import allActivities from '../../activities/allActivities';
 import {ButtonBase} from '@mui/material';
-import ActivityTitle from '../activityList/ActivityTitle';
-import TimePeriodIndicator from '../activityList/TimePeriodIndicator';
-import ActivityInformation from '../activities/ActivityInformation';
+import ActivityTitle from '../../activityItem/ActivityTitle';
+import TimePeriodIndicator from '../../activityItem/TimePeriodIndicator';
+import ActivityInformation from '../../activities/ActivityInformation';
 
 interface BreadcrumbsProps {
 	/**

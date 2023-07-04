@@ -1,5 +1,5 @@
 import ActivityInformation from '../activities/ActivityInformation';
-import {useActivitySelect} from '../activityDetail/ActivitySelect';
+import {useActivitySelect} from './ActivitySelect';
 import Button from '@mui/material/Button';
 import React from 'react';
 

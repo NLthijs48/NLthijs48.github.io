@@ -1,8 +1,8 @@
 import React from 'react';
 import Header from './components/Header';
 import HomePage from './pages/HomePage';
-import {useActivitySelect} from './activityDetail/ActivitySelect';
-import ActivityPage from './pages/ActivityPage';
+import {useActivitySelect} from './activityItem/ActivitySelect';
+import ActivityPage from './pages/activityPage/ActivityPage';
 
 export enum LayoutMode {
 	Desktop,

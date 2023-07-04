@@ -5,10 +5,10 @@ import {activityTypeColors, activityTypeDescriptions} from '../activities/Activi
 import ActivityTitleText from './ActivityTitleText';
 import React from 'react';
 
-type ActivityTitleProps = {
+interface ActivityTitleProps {
 	activity: ActivityInformation;
 	hLevel: 1 | 2 | 3 | 4 | 5 | 6;
-};
+}
 
 function ActivityTitle(props: ActivityTitleProps) {
 	const iconColor = activityTypeColors[props.activity.activityType];

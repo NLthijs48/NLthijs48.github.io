@@ -4,7 +4,7 @@ import ActivityType from '../activities/ActivityType';
 import allActivities from '../activities/allActivities';
 import ActivityList from './ActivityList';
 
-function NestedActivityList() {
+function FilteredActivityList() {
 	const [activityTypeFilter, setActivityTypeFilter] = React.useState<null | ActivityType>(getActivityTypeFromUrl());
 
 	const setActivityType = React.useCallback(
@@ -28,7 +28,7 @@ function NestedActivityList() {
 			<Filters activityType={activityTypeFilter} setActivityType={setActivityType} style={{marginBottom: '1em'}} />
 
 			<FilterContext.Provider value={activityTypeFilter}>
-				<ActivityList activities={allActivities} hLevel={2} />
+				<ActivityList activities={allActivities} hLevel={2} renderChildActivities />
 			</FilterContext.Provider>
 		</div>
 	);
@@ -48,4 +48,4 @@ function getActivityTypeFromUrl(): null | ActivityType {
 	return activityTypeParameter as ActivityType;
 }
 
-export default NestedActivityList;
+export default FilteredActivityList;

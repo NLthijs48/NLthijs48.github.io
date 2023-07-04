@@ -12,6 +12,14 @@ const theme = createTheme({
 			default: '#eeeeee',
 		},
 	},
+	components: {
+		MuiTooltip: {
+			defaultProps: {
+				// Prevent going into tooltip quick-open mode after moving from the first to the second one
+				enterNextDelay: 200,
+			},
+		},
+	},
 });
 
 export default theme;

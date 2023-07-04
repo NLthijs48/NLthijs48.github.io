@@ -8,7 +8,7 @@ import '@fontsource/roboto/400.css';
 import '@fontsource/roboto/500.css';
 import '@fontsource/roboto/700.css';
 import theme from './theme';
-import {ActivitySelectProvider} from './activityDetail/ActivitySelect';
+import {ActivitySelectProvider} from './activityItem/ActivitySelect';
 
 // https://mui.com/material-ui/getting-started/installation/
 // TODO: Sentry
