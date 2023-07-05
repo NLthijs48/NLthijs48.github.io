@@ -23,6 +23,8 @@ function ActivityTitle(props: ActivityTitleProps) {
 				display: 'flex',
 				flexDirection: 'row',
 				alignItems: 'stretch',
+				// Prevent big line height caused by hX, which stretches the height of this container
+				lineHeight: 'normal',
 			}}
 		>
 			<Tooltip title={activityTypeDescriptions[props.activity.activityType]}>
