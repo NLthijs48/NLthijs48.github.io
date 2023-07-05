@@ -65,10 +65,7 @@ function ActivityItem(props: ActivityItemProps) {
 	}
 
 	return (
-		<div
-			style={{transition: 'background-color 150ms ease-in-out', borderRadius: '1em', ...props.style}}
-			className={isOnActivityPage ? undefined : props.className}
-		>
+		<div style={{borderRadius: '1em', ...props.style}} className={isOnActivityPage ? undefined : props.className}>
 			{content}
 
 			{!!props.renderChildActivities && !!props.activity.activities && (
@@ -86,8 +83,13 @@ function ActivityItem(props: ActivityItemProps) {
 
 // Hover styling
 const ActivityItemHover = styled(ActivityItem)<ActivityItemProps>(() => ({
-	'& .MuiButtonBase-root:hover': {
-		backgroundColor: 'rgba(0, 0, 0, 0.08)',
+	'& .MuiButtonBase-root': {
+		// Always needs to be active to work
+		transition: 'background-color 150ms ease-in-out',
+		'&:hover': {
+			// Slight dark color for hover
+			backgroundColor: 'rgba(0, 0, 0, 0.08)',
+		},
 	},
 }));
 
