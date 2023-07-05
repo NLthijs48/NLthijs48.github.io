@@ -2,17 +2,18 @@ import React, {CSSProperties} from 'react';
 import ActivityInformation from '../activities/ActivityInformation';
 import TimePeriodIndicator from './TimePeriodIndicator';
 import ActivityList from '../activityList/ActivityList';
-import ActivityDetailsButton from './ActivityDetailsButton';
 import ActivityTitle from './ActivityTitle';
 import ButtonBase from '@mui/material/ButtonBase';
-import Tooltip from '@mui/material/Tooltip';
 import {useActivitySelect} from './ActivitySelect';
 import ActivityDescription from './ActivityDescription';
+import {styled} from '@mui/material';
+import ActivityHighlightsPreview from './ActivityHighlightsPreview';
 
 interface ActivityItemProps {
 	activity: ActivityInformation;
 	hLevel: 1 | 2 | 3 | 4 | 5 | 6;
 	style?: CSSProperties;
+	className?: string;
 	/** Render a list of child activities, defaults to false */
 	renderChildActivities?: boolean;
 }
@@ -20,35 +21,18 @@ interface ActivityItemProps {
 function ActivityItem(props: ActivityItemProps) {
 	const {setActivity, activity: activeActivity} = useActivitySelect();
 
-	let title = <ActivityTitle activity={props.activity} hLevel={props.hLevel} />;
-	if (props.activity !== activeActivity) {
-		title = (
-			<Tooltip title="View details">
-				<ButtonBase
-					onClick={() => setActivity(props.activity)}
-					style={{
-						textDecoration: 'underline',
-						textDecorationColor: 'rgba(0,0,0,0.4)',
-						width: '100%',
-						display: 'block',
-						fontSize: 'inherit',
-						borderRadius: '1em',
-					}}
-				>
-					{title}
-				</ButtonBase>
-			</Tooltip>
-		);
-	}
+	const isOnActivityPage = props.activity === activeActivity;
 
-	return (
-		<div style={{display: 'flex', flexDirection: 'column', ...props.style}}>
-			{title}
+	let content = (
+		<div style={{display: 'flex', flexDirection: 'column', paddingBottom: '0.5em'}}>
+			<ActivityTitle
+				activity={props.activity}
+				hLevel={props.hLevel}
+				style={isOnActivityPage ? {} : {textDecoration: 'underline', textDecorationColor: 'rgba(0,0,0,0.4)'}}
+			/>
 
 			<div
 				style={{
-					fontSize: 'inherit',
-					paddingTop: 0,
 					paddingLeft: '2.5em',
 					paddingRight: '0.5em',
 					flex: 1,
@@ -57,17 +41,54 @@ function ActivityItem(props: ActivityItemProps) {
 			>
 				<TimePeriodIndicator activity={props.activity} style={{marginBottom: '0.5em'}} />
 				<ActivityDescription activity={props.activity} style={{fontSize: '0.6em'}} />
-				{!!props.renderChildActivities && !!props.activity.activities && (
+				{!isOnActivityPage && <ActivityHighlightsPreview activity={props.activity} style={{marginTop: '0.2em'}} />}
+			</div>
+		</div>
+	);
+
+	// Add click action
+	if (!isOnActivityPage) {
+		content = (
+			<ButtonBase
+				onClick={() => setActivity(props.activity)}
+				style={{
+					width: '100%',
+					display: 'block',
+					fontSize: 'inherit',
+					borderRadius: '1em',
+					textAlign: 'left',
+				}}
+			>
+				{content}
+			</ButtonBase>
+		);
+	}
+
+	return (
+		<div
+			style={{transition: 'background-color 150ms ease-in-out', borderRadius: '1em', ...props.style}}
+			className={isOnActivityPage ? undefined : props.className}
+		>
+			{content}
+
+			{!!props.renderChildActivities && !!props.activity.activities && (
+				<div style={{paddingLeft: '2.5em'}}>
 					<ActivityList
 						activities={props.activity.activities}
 						style={{fontSize: '0.7em', marginTop: '0.5em'}}
 						hLevel={Math.min(6, props.hLevel + 1) as any}
 					/>
-				)}
-				{!!props.activity.highlights && <ActivityDetailsButton activity={props.activity}></ActivityDetailsButton>}
-			</div>
+				</div>
+			)}
 		</div>
 	);
 }
 
-export default ActivityItem;
+// Hover styling
+const ActivityItemHover = styled(ActivityItem)<ActivityItemProps>(() => ({
+	'& .MuiButtonBase-root:hover': {
+		backgroundColor: 'rgba(0, 0, 0, 0.08)',
+	},
+}));
+
+export default ActivityItemHover;

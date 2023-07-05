@@ -8,6 +8,7 @@ import React from 'react';
 interface ActivityTitleProps {
 	activity: ActivityInformation;
 	hLevel: 1 | 2 | 3 | 4 | 5 | 6;
+	style?: React.CSSProperties;
 }
 
 function ActivityTitle(props: ActivityTitleProps) {
@@ -25,6 +26,7 @@ function ActivityTitle(props: ActivityTitleProps) {
 				alignItems: 'stretch',
 				// Prevent big line height caused by hX, which stretches the height of this container
 				lineHeight: 'normal',
+				...props.style,
 			}}
 		>
 			<Tooltip title={activityTypeDescriptions[props.activity.activityType]}>

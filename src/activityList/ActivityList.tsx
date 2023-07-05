@@ -26,7 +26,7 @@ function ActivityList(props: ActivityListProps) {
 					activity={activity}
 					hLevel={props.hLevel}
 					renderChildActivities={props.renderChildActivities}
-					style={{marginBottom: '1em'}}
+					style={{marginBottom: '0.5em'}}
 				/>
 			))}
 		</div>
