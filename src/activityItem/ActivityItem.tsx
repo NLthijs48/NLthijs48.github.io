@@ -28,6 +28,7 @@ function ActivityItem(props: ActivityItemProps) {
 					onClick={() => setActivity(props.activity)}
 					style={{
 						textDecoration: 'underline',
+						textDecorationColor: 'rgba(0,0,0,0.4)',
 						width: '100%',
 						display: 'block',
 						fontSize: 'inherit',

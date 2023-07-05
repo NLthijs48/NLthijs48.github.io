@@ -18,24 +18,25 @@ function ActivityTitle(props: ActivityTitleProps) {
 			style={{
 				backgroundColor: 'white',
 				padding: 0,
-				height: '2em',
+				minHeight: '2em', // One line of text in ActivityTitleText
 				borderRadius: '1em',
 				display: 'flex',
 				flexDirection: 'row',
-				alignItems: 'center',
+				alignItems: 'stretch',
 			}}
 		>
 			<Tooltip title={activityTypeDescriptions[props.activity.activityType]}>
 				<div
 					style={{
 						width: '2em',
-						height: '2em',
+						minHeight: '2em',
 						display: 'flex',
+						flexDirection: 'column',
 						alignItems: 'center',
 						justifyContent: 'center',
 						backgroundColor: iconColor,
 						marginTop: 0,
-						borderRadius: '50%',
+						borderRadius: '1em',
 						color: 'white',
 						flexShrink: 0,
 					}}

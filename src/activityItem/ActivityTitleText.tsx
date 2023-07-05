@@ -16,10 +16,8 @@ function ActivityTitleText(props: ActivityTitleProps) {
 			style={{
 				fontSize: '1em',
 				margin: 0,
-				padding: '0em 0.5em 0em 0.5em',
-				whiteSpace: 'nowrap',
-				textOverflow: 'ellipsis',
-				overflow: 'hidden',
+				padding: '0.4em 0.5em 0.4em 0.5em',
+				textAlign: 'left',
 			}}
 		>
 			{props.activity.name}
