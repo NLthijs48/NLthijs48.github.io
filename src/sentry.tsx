@@ -3,13 +3,11 @@ import React from 'react';
 
 const isDevelopment = process.env?.NODE_ENV === 'development';
 
-console.log(process.env);
-
 export function setupSentry() {
-	// TODO: disable locally
-	//if (isDevelopment) {
-	//	return;
-	//}
+	// Disable in development
+	if (isDevelopment) {
+		return;
+	}
 
 	// Start Sentry
 	sentryInit({
