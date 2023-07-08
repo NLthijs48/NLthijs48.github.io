@@ -9,19 +9,23 @@ import '@fontsource/roboto/500.css';
 import '@fontsource/roboto/700.css';
 import theme from './theme';
 import {ActivitySelectProvider} from './activityItem/ActivitySelect';
+import {setupSentry, ErrorBoundary} from './sentry';
 
-// https://mui.com/material-ui/getting-started/installation/
-// TODO: Sentry
+// TODO: https://mui.com/material-ui/getting-started/installation/
+
+setupSentry();
 
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement);
 root.render(
 	<React.StrictMode>
-		<ThemeProvider theme={theme}>
-			<CssBaseline />
-			<ActivitySelectProvider>
-				<PageWrapper />
-			</ActivitySelectProvider>
-		</ThemeProvider>
+		<ErrorBoundary>
+			<ThemeProvider theme={theme}>
+				<CssBaseline />
+				<ActivitySelectProvider>
+					<PageWrapper />
+				</ActivitySelectProvider>
+			</ThemeProvider>
+		</ErrorBoundary>
 	</React.StrictMode>
 );
 
