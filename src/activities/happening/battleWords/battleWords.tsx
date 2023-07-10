@@ -15,10 +15,13 @@ const battleWords: JobInformation = {
 	activityType: ActivityType.Job,
 	name: 'BattleWords',
 	slug: 'happeningBattleWords',
-	oneliner: (
+	oneliner: <div>A Scrabble-like game for big groups, battling by making the best words.</div>,
+	description: (
 		<div>
-			A Scrabble-like game for big groups. Works round-by-round, revealing the moves of each player after a round is complete by
-			showing a fully animated playing board
+			Works round-by-round, revealing the moves of each player after a round is complete by showing a fully animated playing board.
+			Built using Coffeescript (flavor of JavaScript) in the front-end, in combination with an in-house reactive framework for
+			rendering. The backend uses Coffeescript as well, which meant the complete game logic was shared between front-end and backend
+			to verify moves and calculate scores.
 		</div>
 	),
 

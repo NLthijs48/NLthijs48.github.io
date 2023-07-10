@@ -5,6 +5,7 @@ import Breadcrumbs from './Breadcrumbs';
 import ActivityList from '../../activityList/ActivityList';
 import ActivityItem from '../../activityItem/ActivityItem';
 import ActivityWebsite from './ActivityWebsite';
+import ActivityDescription from '../../activityItem/ActivityDescription';
 
 // TODO: home page button
 
@@ -18,8 +19,10 @@ function ActivityPage(props: ActivityPageProps) {
 				toActivity={props.activity}
 				style={{paddingLeft: '1.7em', paddingRight: '1.7em', opacity: 0.7, fontSize: '1.2em'}}
 			/>
-			<ActivityItem activity={props.activity} hLevel={1} style={{fontSize: '2.2em', marginBottom: '0.5em'}} />
-			<ActivityWebsite activity={props.activity} style={{marginBottom: '0.5em', marginLeft: '5.4em'}} />
+			<ActivityItem activity={props.activity} hLevel={1} style={{fontSize: '2.2em', marginBottom: '0.5em'}}>
+				<ActivityWebsite activity={props.activity} style={{marginBottom: '0.5em'}} />
+				<ActivityDescription activity={props.activity} style={{fontSize: '0.5em'}} />
+			</ActivityItem>
 
 			{!!props.activity.activities && (
 				<div style={{marginTop: '2em'}}>
@@ -28,8 +31,14 @@ function ActivityPage(props: ActivityPageProps) {
 				</div>
 			)}
 
-			{!!props.activity.highlights &&
-				props.activity.highlights.map((highlight, index) => <HighlightItem highlight={highlight} key={index} />)}
+			{!!props.activity.highlights && (
+				<div style={{marginTop: '2em'}}>
+					<h2 style={{marginBottom: '0.5em'}}>Highlights</h2>
+					{props.activity.highlights.map((highlight, index) => (
+						<HighlightItem highlight={highlight} key={index} />
+					))}
+				</div>
+			)}
 		</div>
 	);
 }

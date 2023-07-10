@@ -21,6 +21,12 @@ interface ActivityInformationBase {
 	oneliner: React.ReactNode;
 
 	/**
+	 * Description of the project
+	 * - anything that does not have a dedicated field for it
+	 */
+	description?: React.ReactNode;
+
+	/**
 	 * Icon that represents the activity
 	 * https://mui.com/material-ui/material-icons/
 	 */

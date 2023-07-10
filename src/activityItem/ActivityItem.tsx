@@ -18,6 +18,12 @@ interface ActivityItemProps {
 	renderChildActivities?: boolean;
 	/** Show the oneliner, default false */
 	showOneliner?: boolean;
+	/**
+	 * Optional children
+	 * - uses the same padding as the title and period
+	 * - has no onClick on it
+	 */
+	children?: React.ReactNode;
 }
 
 function ActivityItem(props: ActivityItemProps) {
@@ -72,6 +78,8 @@ function ActivityItem(props: ActivityItemProps) {
 	return (
 		<div style={{borderRadius: '1em', ...props.style}} className={isOnActivityPage ? undefined : props.className}>
 			{content}
+
+			{!!props.children && <div style={{paddingLeft: '2.5em'}}>{props.children}</div>}
 
 			{!!props.renderChildActivities && !!props.activity.activities && (
 				<div style={{paddingLeft: '2.5em'}}>
