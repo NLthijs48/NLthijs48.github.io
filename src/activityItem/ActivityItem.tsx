@@ -44,7 +44,9 @@ function ActivityItem(props: ActivityItemProps) {
 			>
 				<TimePeriodIndicator activity={props.activity} style={{marginBottom: '0.5em'}} />
 				{showDescription && <ActivityDescription activity={props.activity} style={{fontSize: '0.6em', marginBottom: '0.5em'}} />}
-				{!isOnActivityPage && <ActivityHighlightsPreview activity={props.activity} style={{marginTop: '0.2em'}} />}
+				{!isOnActivityPage && (
+					<ActivityHighlightsPreview activity={props.activity} style={{marginTop: '0.2em', marginBottom: '0.5em'}} />
+				)}
 			</div>
 		</div>
 	);
