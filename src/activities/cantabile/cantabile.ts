@@ -6,7 +6,7 @@ const cantabile: JobInformation = {
 	activityType: ActivityType.Job,
 	slug: 'cantabile',
 	name: 'Cantabilé',
-	description: 'Website for a female choir, worked together with designer Stef Heerink.',
+	oneliner: 'Website for a female choir, worked together with designer Stef Heerink.',
 	from: 'May 2012',
 	till: 'June 2012',
 	Icon: MusicNoteIcon,

@@ -1,12 +1,12 @@
 import ActivityInformation from '../activities/ActivityInformation';
 import React from 'react';
 
-interface ActivityDescriptionProps {
+interface ActivityOnelinerProps {
 	activity: ActivityInformation;
 	style?: React.CSSProperties;
 }
 
-function ActivityDescription(props: ActivityDescriptionProps) {
+function ActivityOneliner(props: ActivityOnelinerProps) {
 	return (
 		<div
 			style={{
@@ -17,9 +17,9 @@ function ActivityDescription(props: ActivityDescriptionProps) {
 				...props.style,
 			}}
 		>
-			{props.activity.description}
+			{props.activity.oneliner}
 		</div>
 	);
 }
 
-export default ActivityDescription;
+export default ActivityOneliner;

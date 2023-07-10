@@ -7,7 +7,7 @@ const conquest: EducationInformation = {
 	activityType: ActivityType.Education,
 	slug: 'happeningConquest',
 	name: 'Happening: Conquest',
-	description: (
+	oneliner: (
 		<div>
 			Happening game in which you capture beacons by going to the location in real life. Made for a half year assignment at the
 			university in combination with Happening and 5 other students.

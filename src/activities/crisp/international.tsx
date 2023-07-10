@@ -6,7 +6,7 @@ const international: JobInformation = {
 	activityType: ActivityType.Job,
 	name: 'International: Belgium',
 	slug: 'crispInternational',
-	description: <div>Setup the expansion to Belgium, from the warehouse and last-mile perspective.</div>,
+	oneliner: <div>Setup the expansion to Belgium, from the warehouse and last-mile perspective.</div>,
 	from: 'January 2022', // Start of the first preparations
 	till: 'June 2022', // Launch of the Belgium warehouse
 	Icon: FlagIcon,

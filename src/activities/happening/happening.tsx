@@ -11,7 +11,7 @@ const happening: JobInformation = {
 	activityType: ActivityType.Job,
 	name: 'Happening',
 	slug: 'happening',
-	description: (
+	oneliner: (
 		<div>
 			I was a developer at Happening, helping to improve the core of this group chat app, and writing games and tools that can be used
 			in those groups.

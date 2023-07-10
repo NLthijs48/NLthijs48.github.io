@@ -12,7 +12,7 @@ const computerScienceMaster: EducationInformation = {
 	activityType: ActivityType.Education,
 	slug: 'computerScienceMaster',
 	name: 'Computer Science Master',
-	description: <div>Master education at the University of Twente.</div>,
+	oneliner: <div>Master education at the University of Twente.</div>,
 	from: 'September 2015', // Started on the 1st
 	till: 'March 2018', // Presentation and diploma on the 7th
 	Icon: SchoolIcon,

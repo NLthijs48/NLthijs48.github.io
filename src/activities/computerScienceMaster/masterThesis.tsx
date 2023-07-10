@@ -7,7 +7,7 @@ const masterThesis: EducationInformation = {
 	activityType: ActivityType.Education,
 	name: 'Master thesis at Staying: analytics funnels',
 	slug: 'computerScienceMasterThesis',
-	description: <div>Analyzing user flows using funnels to figure out which paths users take.</div>,
+	oneliner: <div>Analyzing user flows using funnels to figure out which paths users take.</div>,
 	from: 'February 2017',
 	till: 'March 2018',
 	Icon: FilterAltIcon,

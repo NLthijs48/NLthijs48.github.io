@@ -8,7 +8,7 @@ const thales: EducationInformation = {
 	activityType: ActivityType.Education,
 	name: 'Thales: chaos monkey',
 	slug: 'thalesChaosMonkey',
-	description: (
+	oneliner: (
 		<div>
 			Assignment at Thales to create a chaos monkey for their distributed software system, inspired by{' '}
 			<ExternalLink href="https://netflix.github.io/chaosmonkey/">chaos monkey of Netflix</ExternalLink>.

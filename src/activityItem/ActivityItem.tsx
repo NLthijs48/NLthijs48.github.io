@@ -5,7 +5,7 @@ import ActivityList from '../activityList/ActivityList';
 import ActivityTitle from './ActivityTitle';
 import ButtonBase from '@mui/material/ButtonBase';
 import {useActivitySelect} from './ActivitySelect';
-import ActivityDescription from './ActivityDescription';
+import ActivityOneliner from './ActivityOneliner';
 import {styled} from '@mui/material';
 import ActivityHighlightsPreview from './ActivityHighlightsPreview';
 
@@ -16,8 +16,8 @@ interface ActivityItemProps {
 	className?: string;
 	/** Render a list of child activities, defaults to false */
 	renderChildActivities?: boolean;
-	/** Show the description, default false */
-	showDescription?: boolean;
+	/** Show the oneliner, default false */
+	showOneliner?: boolean;
 }
 
 function ActivityItem(props: ActivityItemProps) {
@@ -25,7 +25,7 @@ function ActivityItem(props: ActivityItemProps) {
 
 	const isOnActivityPage = props.activity === activeActivity;
 
-	const showDescription = props.showDescription ?? true;
+	const showOneliner = props.showOneliner ?? true;
 	let content = (
 		<div style={{display: 'flex', flexDirection: 'column'}}>
 			<ActivityTitle
@@ -43,7 +43,7 @@ function ActivityItem(props: ActivityItemProps) {
 				}}
 			>
 				<TimePeriodIndicator activity={props.activity} style={{marginBottom: '0.5em'}} />
-				{showDescription && <ActivityDescription activity={props.activity} style={{fontSize: '0.6em', marginBottom: '0.5em'}} />}
+				{showOneliner && <ActivityOneliner activity={props.activity} style={{fontSize: '0.6em', marginBottom: '0.5em'}} />}
 				{!isOnActivityPage && (
 					<ActivityHighlightsPreview activity={props.activity} style={{marginTop: '0.2em', marginBottom: '0.5em'}} />
 				)}

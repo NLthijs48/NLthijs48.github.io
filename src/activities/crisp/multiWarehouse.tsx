@@ -6,7 +6,7 @@ const multiWarehouse: JobInformation = {
 	activityType: ActivityType.Job,
 	name: 'Multi-warehouse support',
 	slug: 'crispMultiWarehouse',
-	description: (
+	oneliner: (
 		<div>
 			Added support for multiple warehouses in a single country, supporting major growth of the company. I tackled this project
 			together with Tristan, Hoang, Ronald, later joined by Joeri as Product Owner.

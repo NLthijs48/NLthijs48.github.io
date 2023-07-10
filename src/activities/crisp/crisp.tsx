@@ -15,7 +15,7 @@ const crisp: JobInformation = {
 	activityType: ActivityType.Job,
 	name: 'Crisp',
 	slug: 'crisp',
-	description: (
+	oneliner: (
 		<div>
 			Revamping the food logistics chain from{' '}
 			<AgricultureIcon style={{opacity: 0.6, fontSize: '130%', marginBottom: '-0.2em', marginRight: '0.1em'}} />

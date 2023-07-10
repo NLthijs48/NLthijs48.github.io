@@ -6,7 +6,7 @@ const kienhoes: JobInformation = {
 	activityType: ActivityType.Job,
 	name: 'Kienhoes',
 	slug: 'kienhoes',
-	description: 'Website for farm apartments that are for rental, worked together with designer Stef Heerink.',
+	oneliner: 'Website for farm apartments that are for rental, worked together with designer Stef Heerink.',
 	from: 'July 2012',
 	till: 'October 2012',
 	Icon: NightShelterIcon,

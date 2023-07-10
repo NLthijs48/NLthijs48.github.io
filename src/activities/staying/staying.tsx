@@ -7,7 +7,7 @@ const staying: JobInformation = {
 	activityType: ActivityType.Job,
 	name: 'Staying',
 	slug: 'staying',
-	description: (
+	oneliner: (
 		<div>
 			Service to let hotel guests communicate with the front desk: before, during and after their stay to have all information they
 			need about the accommodation and surroundings.

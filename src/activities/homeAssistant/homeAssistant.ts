@@ -6,7 +6,7 @@ const homeAssistant: HobbyInformation = {
 	activityType: ActivityType.Hobby,
 	name: 'Home Assistant dashboard',
 	slug: 'homeAssistant',
-	description: 'Automating my home: lighting, home cinema, electricity usage.',
+	oneliner: 'Automating my home: lighting, home cinema, electricity usage.',
 	from: '2020',
 	Icon: HomeIcon,
 	website: 'https://github.com/NLThijs48/home-assistant',

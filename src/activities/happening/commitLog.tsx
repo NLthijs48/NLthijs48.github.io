@@ -7,7 +7,7 @@ const commitLog: HobbyInformation = {
 	activityType: ActivityType.Hobby,
 	name: 'CommitLog',
 	slug: 'happeningCommitLog',
-	description: (
+	oneliner: (
 		<div>Happening plugin to view commits made in a GitHub or BitBucket repository, receives updates using webhooks from them.</div>
 	),
 	from: 'December 2015',

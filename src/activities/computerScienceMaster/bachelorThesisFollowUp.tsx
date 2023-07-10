@@ -7,7 +7,7 @@ const bachelorThesisFollowUp: EducationInformation = {
 	activityType: ActivityType.Education,
 	name: 'Parallel prefix sum verification with VerCors',
 	slug: 'computerSciencePrefixSum',
-	description: (
+	oneliner: (
 		<div>
 			As follow-up of my Bachelor paper I continued with the verification of the parallel prefix sum verification with the VerCors
 			tool, and succeeded!

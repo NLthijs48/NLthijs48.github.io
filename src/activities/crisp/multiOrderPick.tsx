@@ -6,7 +6,7 @@ const multiOrderPick: JobInformation = {
 	activityType: ActivityType.Job,
 	name: 'Warehouse: multi-order pick',
 	slug: 'crispMultiOrderPick',
-	description: (
+	oneliner: (
 		<div>
 			New order picking system: collect products for boxes of multiple orders at once, split picking process by delivery temperature.
 			This increased efficiency immensely, especially because it was in-time before the move to a bigger warehouse.

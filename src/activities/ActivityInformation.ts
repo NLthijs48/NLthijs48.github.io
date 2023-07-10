@@ -15,11 +15,10 @@ interface ActivityInformationBase {
 	 */
 	name: string;
 
-	// TODO: separate 'caption' (single line) and description (multi-line)
 	/**
 	 * Single line that describes it
 	 */
-	description: React.ReactNode;
+	oneliner: React.ReactNode;
 
 	/**
 	 * Icon that represents the activity

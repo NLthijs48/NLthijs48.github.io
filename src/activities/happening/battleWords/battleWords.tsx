@@ -15,12 +15,13 @@ const battleWords: JobInformation = {
 	activityType: ActivityType.Job,
 	name: 'BattleWords',
 	slug: 'happeningBattleWords',
-	description: (
+	oneliner: (
 		<div>
 			A Scrabble-like game for big groups. Works round-by-round, revealing the moves of each player after a round is complete by
 			showing a fully animated playing board
 		</div>
 	),
+
 	from: 'February 2016', // This is a guess
 	till: 'April 2016', // This is a guess
 	Icon: ExplicitIcon, // Looks like a letter tile of the game

@@ -7,7 +7,7 @@ const minor: EducationInformation = {
 	activityType: ActivityType.Education,
 	slug: 'computerScienceMinor',
 	name: 'Minor: aeronautical engineering',
-	description: (
+	oneliner: (
 		<div>
 			Minor in aeronautical engineering for half a year, where I learned about airplane industry, airplane engineering and
 			aerodynamics.

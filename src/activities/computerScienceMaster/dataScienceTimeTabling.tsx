@@ -7,7 +7,7 @@ const dataScienceTimeTabling: EducationInformation = {
 	activityType: ActivityType.Education,
 	name: 'Data Science: timetable analysis',
 	slug: 'dataScienceTimeTabling',
-	description: (
+	oneliner: (
 		<div>
 			Analyzed timetable data of the University of Twente for the Data Science course together with another student. Used
 			XQuery/XML/SQL as per instructions of the course.

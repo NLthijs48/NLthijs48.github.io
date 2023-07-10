@@ -7,7 +7,7 @@ const bachelorThesis: EducationInformation = {
 	activityType: ActivityType.Education,
 	slug: 'computerScienceBachelorThesis',
 	name: 'Bachelor thesis: OpenCL verification',
-	description: (
+	oneliner: (
 		<div>
 			Optimization, Specification and Verification of the Prefix Sum Program in an OpenCL Environment. I got the Best Paper Award,
 			which means it was chosen as the best paper of the year among students in the track Formal Methods and Software Engineering.

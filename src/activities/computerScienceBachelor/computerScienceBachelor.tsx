@@ -10,7 +10,7 @@ const computerScienceBachelor: EducationInformation = {
 	activityType: ActivityType.Education,
 	slug: 'computerScienceBachelor',
 	name: 'Computer Science Bachelor',
-	description: <div>Bachelor education at the University of Twente.</div>,
+	oneliner: <div>Bachelor education at the University of Twente.</div>,
 	from: 'September 2012', // Started 1st of September
 	till: 'September 2015', // Got the diploma on the 11th
 	Icon: SchoolIcon,

@@ -6,7 +6,7 @@ const wolters: JobInformation = {
 	activityType: ActivityType.Job,
 	name: 'Wolters',
 	slug: 'wolters',
-	description: 'Website for a painting company, first paid website I created.',
+	oneliner: 'Website for a painting company, first paid website I created.',
 	from: 'October 2011', // First contact and planning
 	till: 'December 2011', // Rough date around which the website launched
 	Icon: PaletteIcon,
