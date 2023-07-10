@@ -1,10 +1,7 @@
-import {useActivitySelect} from '../../activityItem/ActivitySelect';
 import React from 'react';
 import allActivities from '../../activities/allActivities';
-import {ButtonBase} from '@mui/material';
-import ActivityTitle from '../../activityItem/ActivityTitle';
-import TimePeriodIndicator from '../../activityItem/TimePeriodIndicator';
 import ActivityInformation from '../../activities/ActivityInformation';
+import ActivityItem from '../../activityItem/ActivityItem';
 
 interface BreadcrumbsProps {
 	/**
@@ -16,8 +13,6 @@ interface BreadcrumbsProps {
 }
 
 function Breadcrumbs(props: BreadcrumbsProps) {
-	const {setActivity} = useActivitySelect();
-
 	const breadcrumbs = React.useMemo(() => getBreadcrumbs(props.toActivity, allActivities), [props.toActivity]);
 	if (!breadcrumbs || breadcrumbs.length === 0) {
 		// No crumbs found somehow
@@ -27,23 +22,13 @@ function Breadcrumbs(props: BreadcrumbsProps) {
 	return (
 		<div style={props.style}>
 			{breadcrumbs.map((breadcrumb) => (
-				<div key={breadcrumb.slug} style={{marginBottom: '1em'}}>
-					<ButtonBase
-						onClick={() => setActivity(breadcrumb)}
-						style={{
-							textDecoration: 'underline',
-							width: '100%',
-							display: 'block',
-							fontSize: 'inherit',
-							borderRadius: '1em',
-						}}
-					>
-						<ActivityTitle activity={breadcrumb} hLevel={2} />
-					</ButtonBase>
-					<div style={{paddingLeft: '2.5em', fontSize: '1.3em'}}>
-						<TimePeriodIndicator activity={breadcrumb} />
-					</div>
-				</div>
+				<ActivityItem
+					activity={breadcrumb}
+					hLevel={2}
+					showDescription={false}
+					key={breadcrumb.slug}
+					style={{marginBottom: '1em', fontSize: '1.2em'}}
+				/>
 			))}
 		</div>
 	);

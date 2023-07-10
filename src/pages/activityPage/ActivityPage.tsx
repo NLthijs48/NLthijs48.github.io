@@ -16,7 +16,7 @@ function ActivityPage(props: ActivityPageProps) {
 		<div>
 			<Breadcrumbs
 				toActivity={props.activity}
-				style={{paddingLeft: '2.2em', paddingRight: '2.2em', opacity: 0.7, fontSize: '1.2em'}}
+				style={{paddingLeft: '1.7em', paddingRight: '1.7em', opacity: 0.7, fontSize: '1.2em'}}
 			/>
 			<ActivityItem activity={props.activity} hLevel={1} style={{fontSize: '2.2em', marginBottom: '0.5em'}} />
 			<ActivityWebsite activity={props.activity} style={{marginBottom: '0.5em', marginLeft: '5.4em'}} />

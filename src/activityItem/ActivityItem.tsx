@@ -16,6 +16,8 @@ interface ActivityItemProps {
 	className?: string;
 	/** Render a list of child activities, defaults to false */
 	renderChildActivities?: boolean;
+	/** Show the description, default false */
+	showDescription?: boolean;
 }
 
 function ActivityItem(props: ActivityItemProps) {
@@ -23,8 +25,9 @@ function ActivityItem(props: ActivityItemProps) {
 
 	const isOnActivityPage = props.activity === activeActivity;
 
+	const showDescription = props.showDescription ?? true;
 	let content = (
-		<div style={{display: 'flex', flexDirection: 'column', paddingBottom: '0.5em'}}>
+		<div style={{display: 'flex', flexDirection: 'column'}}>
 			<ActivityTitle
 				activity={props.activity}
 				hLevel={props.hLevel}
@@ -40,7 +43,7 @@ function ActivityItem(props: ActivityItemProps) {
 				}}
 			>
 				<TimePeriodIndicator activity={props.activity} style={{marginBottom: '0.5em'}} />
-				<ActivityDescription activity={props.activity} style={{fontSize: '0.6em'}} />
+				{showDescription && <ActivityDescription activity={props.activity} style={{fontSize: '0.6em', marginBottom: '0.5em'}} />}
 				{!isOnActivityPage && <ActivityHighlightsPreview activity={props.activity} style={{marginTop: '0.2em'}} />}
 			</div>
 		</div>
