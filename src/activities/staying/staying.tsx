@@ -7,6 +7,7 @@ import HighlightType from '../HighlightType';
 import appHome from './appHome.png';
 import appHotel from './appHotel.png';
 import appChat from './appChat.png';
+import masterThesis from '../computerScienceMaster/masterThesis';
 
 const staying: JobInformation = {
 	activityType: ActivityType.Job,
@@ -32,6 +33,8 @@ const staying: JobInformation = {
 	from: 'February 2017',
 	till: 'March 2018',
 	Icon: RoomServiceIcon,
+	activities: [masterThesis],
+	// TODO: break up into child activity for the app and portal?
 	highlights: [
 		{
 			type: HighlightType.Image,
