@@ -10,9 +10,9 @@ function HighlightItem(props: HighlightItemProps) {
 	if (props.highlight.type === HighlightType.Image) {
 		// TODO: use header similar to ActivityTitle?
 		return (
-			<figure style={{margin: 0, marginBottom: '2em'}}>
+			<figure style={{margin: 0, marginBottom: '2em', maxWidth: '100%'}}>
 				<h3 style={{marginBottom: '0.1em'}}>{props.highlight.title}</h3>
-				<img src={props.highlight.image} alt={props.highlight.title} style={{maxHeight: '50em'}} />
+				<img src={props.highlight.image} alt={props.highlight.title} style={{maxHeight: '50em', maxWidth: '100%'}} />
 				<figcaption style={{maxWidth: '40em'}}>{props.highlight.caption}</figcaption>
 			</figure>
 		);

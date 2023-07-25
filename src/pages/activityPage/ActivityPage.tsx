@@ -14,7 +14,7 @@ interface ActivityPageProps {
 }
 function ActivityPage(props: ActivityPageProps) {
 	return (
-		<div>
+		<div style={{position: 'relative'}}>
 			<Breadcrumbs
 				toActivity={props.activity}
 				style={{paddingLeft: '1.7em', paddingRight: '1.7em', opacity: 0.7, fontSize: '1.2em'}}
@@ -32,7 +32,7 @@ function ActivityPage(props: ActivityPageProps) {
 			)}
 
 			{!!props.activity.highlights && (
-				<div style={{marginTop: '2em'}}>
+				<div style={{marginTop: '2em', width: '100%'}}>
 					<h2 style={{marginBottom: '0.5em'}}>Highlights</h2>
 					{props.activity.highlights.map((highlight, index) => (
 						<HighlightItem highlight={highlight} key={index} />
