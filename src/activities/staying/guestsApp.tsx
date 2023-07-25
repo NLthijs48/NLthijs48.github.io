@@ -4,11 +4,11 @@ import React from 'react';
 import ActivityType from '../ActivityType';
 import HighlightType from '../HighlightType';
 
-import appHome from './appHome.png';
-import appHotel from './appHotel.png';
-import appChat from './appChat.png';
+import appHome from './guestsApp/home.png';
+import appHotel from './guestsApp/hotel.png';
+import appChat from './guestsApp/chat.png';
 
-const stayingGuestsApp: JobInformation = {
+const guestsApp: JobInformation = {
 	activityType: ActivityType.Job,
 	name: 'Guests app',
 	slug: 'stayingGuestsApp',
@@ -40,4 +40,4 @@ const stayingGuestsApp: JobInformation = {
 	],
 };
 
-export default stayingGuestsApp;
+export default guestsApp;

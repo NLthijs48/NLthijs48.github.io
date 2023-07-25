@@ -4,8 +4,8 @@ import React from 'react';
 import ActivityType from '../ActivityType';
 
 import masterThesis from '../computerScienceMaster/masterThesis';
-import stayingGuestsApp from './stayingGuestsApp';
-import stayingHotelOwnerPortal from './stayingHotelOwnerPortal';
+import guestsApp from './guestsApp';
+import hotelOwnerPortal from './hotelOwnerPortal';
 
 const staying: JobInformation = {
 	activityType: ActivityType.Job,
@@ -31,7 +31,7 @@ const staying: JobInformation = {
 	from: 'February 2017',
 	till: 'March 2018',
 	Icon: RoomServiceIcon,
-	activities: [masterThesis, stayingGuestsApp, stayingHotelOwnerPortal],
+	activities: [masterThesis, guestsApp, hotelOwnerPortal],
 };
 
 export default staying;

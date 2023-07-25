@@ -4,11 +4,11 @@ import React from 'react';
 import ActivityType from '../ActivityType';
 import HighlightType from '../HighlightType';
 
-import portalBookings from './portalBookings.jpg';
-import portalContent from './portalContent.jpg';
-import portalChat from './portalChat.jpg';
+import portalBookings from './hotelOwnerPortal/bookings.jpg';
+import portalContent from './hotelOwnerPortal/content.jpg';
+import portalChat from './hotelOwnerPortal/chat.jpg';
 
-const stayingHotelOwnerPortal: JobInformation = {
+const hotelOwnerPortal: JobInformation = {
 	activityType: ActivityType.Job,
 	name: 'Hotel owner portal',
 	slug: 'stayingHotelOwnerPortal',
@@ -43,4 +43,4 @@ const stayingHotelOwnerPortal: JobInformation = {
 	],
 };
 
-export default stayingHotelOwnerPortal;
+export default hotelOwnerPortal;
