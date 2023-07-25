@@ -1,15 +1,15 @@
-import {JobInformation} from '../../ActivityInformation';
+import {JobInformation} from '../ActivityInformation';
 import ExplicitIcon from '@mui/icons-material/Explicit';
 import React from 'react';
-import ActivityType from '../../ActivityType';
-import theGameImage from './theGame.png';
-import creatingWordsImage from './creatingWords.png';
-import swappingLettersImage from './swappingLetters.png';
-import endOfRoundImage from './endOfRound.png';
-import scoreboardImage from './scoreboard.png';
-import settingsImage from './settings.png';
-import previousRoundsImage from './previousRounds.png';
-import HighlightType from '../../HighlightType';
+import ActivityType from '../ActivityType';
+import theGameImage from './battleWords/theGame.png';
+import creatingWordsImage from './battleWords/creatingWords.png';
+import swappingLettersImage from './battleWords/swappingLetters.png';
+import endOfRoundImage from './battleWords/endOfRound.png';
+import scoreboardImage from './battleWords/scoreboard.png';
+import settingsImage from './battleWords/settings.png';
+import previousRoundsImage from './battleWords/previousRounds.png';
+import HighlightType from '../HighlightType';
 
 const battleWords: JobInformation = {
 	activityType: ActivityType.Job,

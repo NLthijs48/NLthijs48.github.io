@@ -2,7 +2,7 @@ import {JobInformation} from '../ActivityInformation';
 import QuestionAnswerIcon from '@mui/icons-material/QuestionAnswer';
 import React from 'react';
 import ActivityType from '../ActivityType';
-import battleWords from './battleWords/battleWords';
+import battleWords from './battleWords';
 import splitTheBill from './splitTheBill';
 import whereabouts from './whereabouts';
 import commitLog from './commitLog';
