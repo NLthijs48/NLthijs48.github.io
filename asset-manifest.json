@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.ec2afee5.css",
-    "main.js": "/static/js/main.216f3a9d.js",
+    "main.js": "/static/js/main.bacb5976.js",
     "static/media/hotel.png": "/static/media/hotel.ef7232d14e386052014c.png",
     "static/media/home.png": "/static/media/home.22740d88bb215045c43a.png",
     "static/media/bookings.jpg": "/static/media/bookings.37bf49a6b89e09bc9885.jpg",
@@ -50,10 +50,10 @@
     "static/media/roboto-greek-ext-700-normal.woff2": "/static/media/roboto-greek-ext-700-normal.bd9854c751441ccc1a70.woff2",
     "index.html": "/index.html",
     "main.ec2afee5.css.map": "/static/css/main.ec2afee5.css.map",
-    "main.216f3a9d.js.map": "/static/js/main.216f3a9d.js.map"
+    "main.bacb5976.js.map": "/static/js/main.bacb5976.js.map"
   },
   "entrypoints": [
     "static/css/main.ec2afee5.css",
-    "static/js/main.216f3a9d.js"
+    "static/js/main.bacb5976.js"
   ]
 }
