@@ -6,6 +6,7 @@ import ActivityType from '../ActivityType';
 import masterThesis from '../computerScienceMaster/masterThesis';
 import guestsApp from './guestsApp';
 import hotelOwnerPortal from './hotelOwnerPortal';
+import logo from './logo.png';
 
 const staying: JobInformation = {
 	activityType: ActivityType.Job,
@@ -15,6 +16,9 @@ const staying: JobInformation = {
 		'Service to let hotel guests communicate with the front desk: before, during and after their stay to have all information they need about the accommodation and surroundings.',
 	description: (
 		<div>
+			<div>
+				<img src={logo} alt="Staying logo: check-in desk bell + Staying wordmark" style={{height: 80}} />
+			</div>
 			The parts that made up the company:
 			<ul>
 				<li>Web portal for hotels to set up their hotel + chat with guests</li>
