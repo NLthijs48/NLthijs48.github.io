@@ -17,6 +17,14 @@ function HighlightItem(props: HighlightItemProps) {
 			</figure>
 		);
 	}
+	if (props.highlight.type === HighlightType.Text) {
+		return (
+			<div style={{marginBottom: '2em'}}>
+				<h3 style={{marginBottom: '0.1em'}}>{props.highlight.title}</h3>
+				<div style={{maxWidth: '40em'}}>{props.highlight.text}</div>
+			</div>
+		);
+	}
 	return null;
 }
 

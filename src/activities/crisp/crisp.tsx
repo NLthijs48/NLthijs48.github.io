@@ -10,6 +10,7 @@ import recipes from './recipes';
 import multiOrderPick from './multiOrderPick';
 import multiWarehouse from './multiWarehouse';
 import international from './international';
+import tiger from './tiger';
 
 const crisp: JobInformation = {
 	activityType: ActivityType.Job,
@@ -31,7 +32,7 @@ const crisp: JobInformation = {
 	from: 'April 2018',
 	Icon: BakeryDiningIcon,
 	website: 'https://crisp.nl',
-	activities: [multiWarehouse, international, multiOrderPick, recipes, pickIntoPackaging, launch],
+	activities: [tiger, multiWarehouse, international, multiOrderPick, recipes, pickIntoPackaging, launch],
 };
 
 export default crisp;

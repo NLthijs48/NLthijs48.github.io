@@ -4,6 +4,12 @@ interface HighlightBase {
 	type: HighlightType;
 }
 
+interface HighlightText extends HighlightBase {
+	type: HighlightType.Text;
+	title: string;
+	text: string;
+}
+
 interface HighlightImage extends HighlightBase {
 	type: HighlightType.Image;
 	/**
@@ -18,6 +24,6 @@ interface HighlightLink extends HighlightBase {
 	type: HighlightType.Link;
 }
 
-type Highlight = HighlightImage | HighlightLink;
+type Highlight = HighlightText | HighlightImage | HighlightLink;
 
 export default Highlight;

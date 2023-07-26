@@ -1,4 +1,6 @@
 enum HighlightType {
+	/** Text */
+	Text = 'text',
 	/** Image with a caption */
 	Image = 'image',
 	// TODO: specifically use source code and such
