@@ -1,13 +1,16 @@
 {
   "files": {
     "main.css": "/static/css/main.ec2afee5.css",
-    "main.js": "/static/js/main.bacb5976.js",
+    "main.js": "/static/js/main.95b8ebd7.js",
     "static/media/hotel.png": "/static/media/hotel.ef7232d14e386052014c.png",
+    "static/media/overview.png": "/static/media/overview.441107cdcdf5d8b4d970.png",
     "static/media/home.png": "/static/media/home.22740d88bb215045c43a.png",
     "static/media/bookings.jpg": "/static/media/bookings.37bf49a6b89e09bc9885.jpg",
     "static/media/chat.jpg": "/static/media/chat.fa0934eb23e6a33ad60b.jpg",
     "static/media/content.jpg": "/static/media/content.752b78aad84d069166a3.jpg",
+    "static/media/statisticsTypeScript.png": "/static/media/statisticsTypeScript.7eae76040e2debf3078f.png",
     "static/media/chat.png": "/static/media/chat.2bcb77be8d1f9be624dd.png",
+    "static/media/stageStatistics.png": "/static/media/stageStatistics.8f276988c1f0388fb484.png",
     "static/media/roboto-all-500-normal.woff": "/static/media/roboto-all-500-normal.0ab669b7a0d19b178f57.woff",
     "static/media/roboto-all-700-normal.woff": "/static/media/roboto-all-700-normal.a457fde362a540fcadff.woff",
     "static/media/roboto-all-400-normal.woff": "/static/media/roboto-all-400-normal.c5d001fa922fa66a147f.woff",
@@ -15,6 +18,7 @@
     "static/media/scoreboard.png": "/static/media/scoreboard.5a365eac475572e425c9.png",
     "static/media/previousRounds.png": "/static/media/previousRounds.b48c71c3b242fde6b207.png",
     "static/media/endOfRound.png": "/static/media/endOfRound.72f18f77d12132f8b86f.png",
+    "static/media/stageTesting.png": "/static/media/stageTesting.f80e34c0fcf10969f55e.png",
     "static/media/creatingWords.png": "/static/media/creatingWords.206615377079364502e1.png",
     "static/media/theGame.png": "/static/media/theGame.ac99df13077511c18746.png",
     "static/media/swappingLetters.png": "/static/media/swappingLetters.a25c65320f14eecc5c97.png",
@@ -50,10 +54,10 @@
     "static/media/roboto-greek-ext-700-normal.woff2": "/static/media/roboto-greek-ext-700-normal.bd9854c751441ccc1a70.woff2",
     "index.html": "/index.html",
     "main.ec2afee5.css.map": "/static/css/main.ec2afee5.css.map",
-    "main.bacb5976.js.map": "/static/js/main.bacb5976.js.map"
+    "main.95b8ebd7.js.map": "/static/js/main.95b8ebd7.js.map"
   },
   "entrypoints": [
     "static/css/main.ec2afee5.css",
-    "static/js/main.bacb5976.js"
+    "static/js/main.95b8ebd7.js"
   ]
 }
