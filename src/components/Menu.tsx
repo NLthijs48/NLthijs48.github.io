@@ -11,10 +11,16 @@ import DialogActions from '@mui/material/DialogActions';
 import Button from '@mui/material/Button';
 import DialogContentText from '@mui/material/DialogContentText';
 import MapIcon from '@mui/icons-material/Map';
+import HomeIcon from '@mui/icons-material/Home';
+import {useActivitySelect} from '../activityItem/ActivitySelect';
+import InternalLink from './InternalLink';
 
 interface MenuItemBase {
 	name: string;
 	Icon: typeof SvgIcon;
+}
+interface MenuHome extends MenuItemBase {
+	type: 'home';
 }
 interface MenuLink extends MenuItemBase {
 	type: 'link';
@@ -25,9 +31,14 @@ interface MenuEmail extends MenuItemBase {
 	title: string;
 	hint: string;
 }
-type MenuItem = MenuLink | MenuEmail;
+type MenuItem = MenuHome | MenuLink | MenuEmail;
 
 const menuContent: MenuItem[] = [
+	{
+		type: 'home',
+		name: 'Home',
+		Icon: HomeIcon,
+	},
 	{
 		type: 'link',
 		name: 'Github',
@@ -59,6 +70,7 @@ interface ButtonMenuProps {
 	layout: 'horizontal' | 'vertical';
 }
 function ButtonMenu(props: ButtonMenuProps) {
+	const {activity} = useActivitySelect();
 	return (
 		<nav
 			style={{
@@ -70,6 +82,14 @@ function ButtonMenu(props: ButtonMenuProps) {
 		>
 			{menuContent.map((menuItem, index) => {
 				switch (menuItem.type) {
+					case 'home':
+						return activity ? (
+							<InternalLink key={index}>
+								<MenuButton Icon={menuItem.Icon} layout={props.layout}>
+									{menuItem.name}
+								</MenuButton>
+							</InternalLink>
+						) : null;
 					case 'link':
 						return (
 							<ExternalLink href={menuItem.href} underline="none" key={index}>
