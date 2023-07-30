@@ -48,7 +48,6 @@ export function ActivitySelectProvider(props: ActivitySelectProps) {
 		const onPopstate = (event: PopStateEvent) => {
 			const newActivitySlug = event.state?.activity ?? null;
 			const newActivity = newActivitySlug ? getActivityBySlug(newActivitySlug) : null;
-			// TODO: update title?
 			setActivity(newActivity);
 		};
 		window.addEventListener('popstate', onPopstate);

@@ -10,8 +10,6 @@ import theme from './theme';
 import {ActivitySelectProvider} from './activityItem/ActivitySelect';
 import {setupSentry, ErrorBoundary} from './sentry';
 
-// TODO: https://mui.com/material-ui/getting-started/installation/
-
 setupSentry();
 
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement);
