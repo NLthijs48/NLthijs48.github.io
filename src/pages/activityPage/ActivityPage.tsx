@@ -7,8 +7,6 @@ import ActivityItem from '../../activityItem/ActivityItem';
 import ActivityWebsite from './ActivityWebsite';
 import ActivityDescription from '../../activityItem/ActivityDescription';
 
-// TODO: home page button
-
 interface ActivityPageProps {
 	activity: ActivityInformation;
 }

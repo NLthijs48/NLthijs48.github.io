@@ -12,7 +12,6 @@ import Button from '@mui/material/Button';
 import DialogContentText from '@mui/material/DialogContentText';
 import MapIcon from '@mui/icons-material/Map';
 import HomeIcon from '@mui/icons-material/Home';
-import {useActivitySelect} from '../activityItem/ActivitySelect';
 import InternalLink from './InternalLink';
 
 interface MenuItemBase {
@@ -68,9 +67,9 @@ const menuContent: MenuItem[] = [
 
 interface ButtonMenuProps {
 	layout: 'horizontal' | 'vertical';
+	isHome: boolean;
 }
 function ButtonMenu(props: ButtonMenuProps) {
-	const {activity} = useActivitySelect();
 	return (
 		<nav
 			style={{
@@ -83,13 +82,13 @@ function ButtonMenu(props: ButtonMenuProps) {
 			{menuContent.map((menuItem, index) => {
 				switch (menuItem.type) {
 					case 'home':
-						return activity ? (
+						return props.isHome ? null : (
 							<InternalLink key={index}>
 								<MenuButton Icon={menuItem.Icon} layout={props.layout}>
 									{menuItem.name}
 								</MenuButton>
 							</InternalLink>
-						) : null;
+						);
 					case 'link':
 						return (
 							<ExternalLink href={menuItem.href} underline="none" key={index}>

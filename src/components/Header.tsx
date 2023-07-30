@@ -16,6 +16,7 @@ import Button from '@mui/material/Button';
 
 interface HeaderProps {
 	layoutMode: LayoutMode;
+	isHome: boolean;
 }
 
 /** Header at the top of the page */
@@ -47,7 +48,7 @@ function Header(props: HeaderProps) {
 					<Dialog fullScreen={fullScreen} open={open} onClose={() => setOpen(false)} aria-labelledby="responsive-dialog-title">
 						<DialogTitle id="responsive-dialog-title">Menu</DialogTitle>
 						<DialogContent>
-							<ButtonMenu layout="vertical" />
+							<ButtonMenu layout="vertical" isHome={props.isHome} />
 						</DialogContent>
 						<DialogActions>
 							<Button autoFocus fullWidth onClick={() => setOpen(false)} color="secondary" size="large">
@@ -67,7 +68,7 @@ function Header(props: HeaderProps) {
 							width: '100%',
 						}}
 					>
-						<ButtonMenu layout="horizontal" />
+						<ButtonMenu layout="horizontal" isHome={props.isHome} />
 					</Toolbar>
 				</AppBar>
 			)}

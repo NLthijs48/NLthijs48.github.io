@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="theme-color" content="#ec623d" />
+		<meta name="description" content="Personal website of Thijs Wiefferink" />
+		<link rel="apple-touch-icon" href="%PUBLIC_URL%/icon-192x192.png" />
+		<title>Wiefferink.me</title>
+
+		<script>
+			// Redirect to the home page, which can show a nicer formatted 404 page
+			window.location.href = window.location.origin + '?page=404&href=' + encodeURIComponent(window.location.href);
+		</script>
+	</head>
+	<body>
+		<!-- Backup content to show when there is no Javascript, or the redirect does not work -->
+		<main style="max-width: 40em; margin: 2em auto; font-family: sans-serif">
+			<h1>Oops, that page does not exist!</h1>
+			<p>Probably you can find the content through the homepage, or otherwise email me.</p>
+			<a href="/">Go to the home page</a>
+		</main>
+	</body>
+</html>

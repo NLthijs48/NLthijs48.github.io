@@ -1,8 +1,9 @@
-import React from 'react';
+import React, {useMemo} from 'react';
 import Header from './components/Header';
 import HomePage from './pages/HomePage';
 import {useActivitySelect} from './activityItem/ActivitySelect';
 import ActivityPage from './pages/activityPage/ActivityPage';
+import NotFoundPage from './pages/NotFoundPage';
 
 export enum LayoutMode {
 	Desktop,
@@ -14,6 +15,28 @@ function PageWrapper() {
 	const sideSpace = layoutMode === LayoutMode.Mobile ? '1em' : '2em';
 
 	const {activity} = useActivitySelect();
+
+	const notFound = useMemo(() => {
+		const url = new URL(window.location.href);
+		if (url.searchParams.get('page') !== '404') {
+			return null;
+		}
+
+		return {
+			href: url.searchParams.get('href'),
+		};
+	}, []);
+
+	let page: React.ReactNode;
+	let isHome = false;
+	if (notFound) {
+		page = <NotFoundPage href={notFound.href} />;
+	} else if (activity) {
+		page = <ActivityPage activity={activity} />;
+	} else {
+		isHome = true;
+		page = <HomePage />;
+	}
 
 	return (
 		<div
@@ -27,7 +50,7 @@ function PageWrapper() {
 			}}
 		>
 			<div style={{height: '100%', width: '100%', display: 'flex', flexDirection: 'column'}}>
-				<Header layoutMode={layoutMode} />
+				<Header layoutMode={layoutMode} isHome={isHome} />
 				<div style={{flex: 1, minWidth: 0, display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
 					<main
 						style={{
@@ -39,8 +62,7 @@ function PageWrapper() {
 							paddingBottom: '8em',
 						}}
 					>
-						{!activity && <HomePage />}
-						{activity && <ActivityPage activity={activity} />}
+						{page}
 					</main>
 				</div>
 			</div>
