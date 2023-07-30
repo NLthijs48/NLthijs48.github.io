@@ -4,6 +4,8 @@ import ActivityType from '../activities/ActivityType';
 import allActivities from '../activities/allActivities';
 import ActivityList from './ActivityList';
 
+export const ACTIVITY_TYPE_FILTER_PARAMETER = 'activityType';
+
 function FilteredActivityList() {
 	const [activityTypeFilter, setActivityTypeFilter] = React.useState<null | ActivityType>(getActivityTypeFromUrl());
 
@@ -14,9 +16,9 @@ function FilteredActivityList() {
 			// Update the url parameter in-place, without reloading the page
 			const url = new URL(window.location.href);
 			if (newActivityType) {
-				url.searchParams.set('activityType', newActivityType);
+				url.searchParams.set(ACTIVITY_TYPE_FILTER_PARAMETER, newActivityType);
 			} else {
-				url.searchParams.delete('activityType');
+				url.searchParams.delete(ACTIVITY_TYPE_FILTER_PARAMETER);
 			}
 			window.history.replaceState({}, 'Home', url);
 		},
@@ -36,7 +38,7 @@ function FilteredActivityList() {
 
 function getActivityTypeFromUrl(): null | ActivityType {
 	const parameters = new URLSearchParams(window.location.search);
-	const activityTypeParameter = parameters.get('activityType');
+	const activityTypeParameter = parameters.get(ACTIVITY_TYPE_FILTER_PARAMETER);
 	if (!activityTypeParameter) {
 		return null;
 	}

@@ -1,6 +1,7 @@
 import React, {createContext, ReactNode, useContext, useEffect, useState} from 'react';
 import ActivityInformation from '../activities/ActivityInformation';
 import allActivities from '../activities/allActivities';
+import {ACTIVITY_TYPE_FILTER_PARAMETER} from '../activityList/FilteredActivityList';
 
 const URL_PARAMETER = 'activity';
 
@@ -20,6 +21,7 @@ export function ActivitySelectProvider(props: ActivitySelectProps) {
 	const setActivityAndUrl = React.useCallback(
 		(newActivity: null | ActivityInformation) => {
 			const url = new URL(window.location.href);
+			url.searchParams.delete(ACTIVITY_TYPE_FILTER_PARAMETER);
 			if (newActivity) {
 				setActivity(newActivity);
 				url.searchParams.set(URL_PARAMETER, newActivity.slug);
