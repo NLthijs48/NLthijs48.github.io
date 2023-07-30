@@ -18,7 +18,7 @@ interface HighlightImage extends HighlightBase {
 	 */
 	image: string;
 	title: string;
-	caption: string;
+	caption?: string;
 }
 interface HighlightLink extends HighlightBase {
 	type: HighlightType.Link;
