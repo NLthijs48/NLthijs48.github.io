@@ -1,6 +1,7 @@
 import {JobInformation} from '../ActivityInformation';
 import RocketLaunchIcon from '@mui/icons-material/RocketLaunch';
 import ActivityType from '../ActivityType';
+import HighlightType from '../HighlightType';
 
 const launch: JobInformation = {
 	activityType: ActivityType.Job,
@@ -11,6 +12,13 @@ const launch: JobInformation = {
 	from: 'April 2018',
 	till: 'September 2018', // 5 September first deliveries to customers
 	Icon: RocketLaunchIcon,
+	highlights: [
+		{
+			type: HighlightType.Link,
+			href: 'https://www.culy.nl/restaurants/boodschappen-thuis-eten/crisp-online-verssupermarkt/',
+			title: 'Launch coverage by Curly (in Dutch)',
+		},
+	],
 };
 
 export default launch;

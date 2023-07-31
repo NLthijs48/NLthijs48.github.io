@@ -38,6 +38,11 @@ const crisp: JobInformation = {
 			href: 'https://crisp.nl',
 			title: 'Crisp homepage',
 		},
+		{
+			type: HighlightType.Link,
+			href: 'https://www.linkedin.com/company/crispnl/',
+			title: 'Crisp LinkedIn',
+		},
 	],
 	activities: [tiger, multiWarehouse, international, multiOrderPick, recipes, pickIntoPackaging, launch],
 };
