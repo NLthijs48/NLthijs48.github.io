@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.ec2afee5.css",
-    "main.js": "/static/js/main.3ab2e027.js",
+    "main.js": "/static/js/main.4b15462f.js",
     "static/media/hotel.png": "/static/media/hotel.ef7232d14e386052014c.png",
     "static/media/overview.png": "/static/media/overview.441107cdcdf5d8b4d970.png",
     "static/media/home.png": "/static/media/home.22740d88bb215045c43a.png",
@@ -57,10 +57,10 @@
     "static/media/roboto-greek-ext-700-normal.woff2": "/static/media/roboto-greek-ext-700-normal.bd9854c751441ccc1a70.woff2",
     "index.html": "/index.html",
     "main.ec2afee5.css.map": "/static/css/main.ec2afee5.css.map",
-    "main.3ab2e027.js.map": "/static/js/main.3ab2e027.js.map"
+    "main.4b15462f.js.map": "/static/js/main.4b15462f.js.map"
   },
   "entrypoints": [
     "static/css/main.ec2afee5.css",
-    "static/js/main.3ab2e027.js"
+    "static/js/main.4b15462f.js"
   ]
 }
