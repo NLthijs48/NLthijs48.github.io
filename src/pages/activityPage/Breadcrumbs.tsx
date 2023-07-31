@@ -25,7 +25,7 @@ function Breadcrumbs(props: BreadcrumbsProps) {
 				<ActivityItem
 					activity={breadcrumb}
 					hLevel={2}
-					showOneliner={false}
+					showDetails={false}
 					key={breadcrumb.slug}
 					style={{marginBottom: '1em', fontSize: '1.2em'}}
 				/>

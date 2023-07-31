@@ -11,6 +11,7 @@ import multiOrderPick from './multiOrderPick';
 import multiWarehouse from './multiWarehouse';
 import international from './international';
 import tiger from './tiger';
+import HighlightType from '../HighlightType';
 
 const crisp: JobInformation = {
 	activityType: ActivityType.Job,
@@ -31,7 +32,13 @@ const crisp: JobInformation = {
 	),
 	from: 'April 2018',
 	Icon: BakeryDiningIcon,
-	website: 'https://crisp.nl',
+	highlights: [
+		{
+			type: HighlightType.Link,
+			href: 'https://crisp.nl',
+			title: 'Crisp homepage',
+		},
+	],
 	activities: [tiger, multiWarehouse, international, multiOrderPick, recipes, pickIntoPackaging, launch],
 };
 

@@ -16,8 +16,8 @@ interface ActivityItemProps {
 	className?: string;
 	/** Render a list of child activities, defaults to false */
 	renderChildActivities?: boolean;
-	/** Show the oneliner, default false */
-	showOneliner?: boolean;
+	/** Show details like the oneliner and highlights preview, default true */
+	showDetails?: boolean;
 	/**
 	 * Optional children
 	 * - uses the same padding as the title and period
@@ -31,7 +31,7 @@ function ActivityItem(props: ActivityItemProps) {
 
 	const isOnActivityPage = props.activity === activeActivity;
 
-	const showOneliner = props.showOneliner ?? true;
+	const showDetails = props.showDetails ?? true;
 	let content = (
 		<div style={{display: 'flex', flexDirection: 'column'}}>
 			<ActivityTitle
@@ -49,8 +49,8 @@ function ActivityItem(props: ActivityItemProps) {
 				}}
 			>
 				<TimePeriodIndicator activity={props.activity} style={{marginBottom: '0.5em'}} />
-				{showOneliner && <ActivityOneliner activity={props.activity} style={{fontSize: '0.6em', marginBottom: '0.5em'}} />}
-				{!isOnActivityPage && (
+				{showDetails && <ActivityOneliner activity={props.activity} style={{fontSize: '0.6em', marginBottom: '0.5em'}} />}
+				{showDetails && !isOnActivityPage && (
 					<ActivityHighlightsPreview activity={props.activity} style={{marginTop: '0.2em', marginBottom: '0.5em'}} />
 				)}
 			</div>
