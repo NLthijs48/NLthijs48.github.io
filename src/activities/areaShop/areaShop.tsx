@@ -25,22 +25,19 @@ const areaShop: HobbyInformation = {
 				<ExternalLink href="https://github.com/EngineHub/WorldGuard">WorldGuard</ExternalLink> for defining regions and{' '}
 				<ExternalLink href="https://github.com/MilkBowl/VaultAPI">Vault</ExternalLink> for economy integration.
 			</p>
-			<p>
-				The plugin is open source and can be found on{' '}
-				<ExternalLink href="https://github.com/NLthijs48/AreaShop">GitHub</ExternalLink>. Documentation of the plugin is available
-				on the <ExternalLink href="https://github.com/NLthijs48/AreaShop/wiki">wiki of the GitHub repository</ExternalLink>. The
-				plugin was maily distributed through the{' '}
-				<ExternalLink href="https://www.spigotmc.org/resources/areashop.2991/">Spigot</ExternalLink> resources section and the{' '}
-				<ExternalLink href="https://dev.bukkit.org/projects/regionbuyandrent">BukkitDev</ExternalLink> platform.
-			</p>
 		</div>
 	),
 	from: 'January 2014', // Guess, first commit March 2014 with initial released version (have been developing and using it privately before that)
 	till: 'August 2019', // End of active development
 	Icon: HolidayVillageIcon,
-	website: 'https://github.com/NLthijs48/AreaShop',
 
 	highlights: [
+		{
+			type: HighlightType.Link,
+			title: 'Source code on GitHub',
+			href: 'https://github.com/NLthijs48/AreaShop',
+			caption: 'All code was open source from the start, with some occasional contributions from the community',
+		},
 		{
 			type: HighlightType.Image,
 			title: 'Statistics about users of the plugin',
@@ -51,6 +48,28 @@ const areaShop: HobbyInformation = {
 			title: 'Graph of number of servers using the plugin',
 			image: statsGraph,
 			caption: 'Statistics around 2016-05-04',
+		},
+		{
+			type: HighlightType.Link,
+			title: 'Plugin documentation on GitHub',
+			href: 'https://github.com/NLthijs48/AreaShop/wiki',
+			caption:
+				'Extensive documentation is available, from a simple installation guide to help with setting up complex features. ' +
+				'The goal has always been to make the plugin itself easy to use in-game, but documentation still helps people to decide installing the plugin and prevents some support questions.',
+		},
+		{
+			type: HighlightType.Link,
+			title: 'Plugin distribution: Bukkit',
+			href: 'https://dev.bukkit.org/projects/regionbuyandrent',
+			caption:
+				'Distribution started here initially, Bukkit was the first open source server software and has provided the initial plugin api. My plugin got downloaded 124k+ times and got 1000+ ratings on there.',
+		},
+		{
+			type: HighlightType.Link,
+			title: 'Plugin distribution: Spigot',
+			href: 'https://www.spigotmc.org/resources/areashop.2991/',
+			caption:
+				'Spigot slowly took over from Bukkit, so I made the plugin there available as well. Here it got downloaded 192k+ times and got 197 ratings',
 		},
 	],
 };

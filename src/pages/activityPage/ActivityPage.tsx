@@ -17,21 +17,20 @@ function ActivityPage(props: ActivityPageProps) {
 				toActivity={props.activity}
 				style={{paddingLeft: '1.7em', paddingRight: '1.7em', opacity: 0.7, fontSize: '1.2em'}}
 			/>
-			<ActivityItem activity={props.activity} hLevel={1} style={{fontSize: '2.2em', marginBottom: '0.5em'}}>
-				<ActivityWebsite activity={props.activity} style={{marginBottom: '0.5em'}} />
-				<ActivityDescription activity={props.activity} style={{fontSize: '0.5em'}} />
-			</ActivityItem>
+			<ActivityItem activity={props.activity} hLevel={1} style={{fontSize: '2.2em', marginBottom: '0.5em'}}></ActivityItem>
+			<ActivityWebsite activity={props.activity} style={{marginBottom: '0.5em'}} />
+			<ActivityDescription activity={props.activity} />
 
 			{!!props.activity.activities && (
 				<div style={{marginTop: '2em'}}>
-					<h2 style={{marginBottom: '0.5em'}}>Activities</h2>
+					{!!props.activity.highlights && <h2 style={{marginBottom: '0.5em'}}>Activities</h2>}
 					<ActivityList activities={props.activity.activities} hLevel={3} style={{fontSize: '1.5em'}} />
 				</div>
 			)}
 
 			{!!props.activity.highlights && (
 				<div style={{marginTop: '2em', width: '100%'}}>
-					<h2 style={{marginBottom: '0.5em'}}>Highlights</h2>
+					{!!props.activity.activities && <h2 style={{marginBottom: '0.5em'}}>Highlights</h2>}
 					{props.activity.highlights.map((highlight, index) => (
 						<HighlightItem highlight={highlight} key={index} />
 					))}

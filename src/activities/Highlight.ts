@@ -22,6 +22,10 @@ interface HighlightImage extends HighlightBase {
 }
 interface HighlightLink extends HighlightBase {
 	type: HighlightType.Link;
+	title: string;
+	href: string;
+	caption?: string;
+	// TODO: support image?
 }
 
 type Highlight = HighlightText | HighlightImage | HighlightLink;
