@@ -101,7 +101,7 @@ function ButtonMenu(props: ButtonMenuProps) {
 						return <EmailItem menuItem={menuItem} layout={props.layout} key={index} />;
 				}
 
-				// Shoul never reach
+				// Should never reach
 				return null;
 			})}
 		</nav>

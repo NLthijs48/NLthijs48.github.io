@@ -13,6 +13,7 @@ import DialogTitle from '@mui/material/DialogTitle';
 import DialogContent from '@mui/material/DialogContent';
 import DialogActions from '@mui/material/DialogActions';
 import Button from '@mui/material/Button';
+import {useActivitySelect} from '../activityItem/ActivitySelect';
 
 interface HeaderProps {
 	layoutMode: LayoutMode;
@@ -31,6 +32,12 @@ function Header(props: HeaderProps) {
 
 	const screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
 	const fullScreen = screenWidth < 400;
+
+	// Close dialog on navigation to home
+	const {activity} = useActivitySelect();
+	React.useEffect(() => {
+		setOpen(false);
+	}, [activity]);
 
 	return (
 		<React.Fragment>
