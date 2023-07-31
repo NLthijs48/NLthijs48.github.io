@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.ec2afee5.css",
-    "main.js": "/static/js/main.0495a769.js",
+    "main.js": "/static/js/main.3ab2e027.js",
     "static/media/hotel.png": "/static/media/hotel.ef7232d14e386052014c.png",
     "static/media/overview.png": "/static/media/overview.441107cdcdf5d8b4d970.png",
     "static/media/home.png": "/static/media/home.22740d88bb215045c43a.png",
@@ -19,6 +19,7 @@
     "static/media/previousRounds.png": "/static/media/previousRounds.b48c71c3b242fde6b207.png",
     "static/media/endOfRound.png": "/static/media/endOfRound.72f18f77d12132f8b86f.png",
     "static/media/stageTesting.png": "/static/media/stageTesting.f80e34c0fcf10969f55e.png",
+    "static/media/statsGraph.png": "/static/media/statsGraph.267566f12ab09666bbe3.png",
     "static/media/creatingWords.png": "/static/media/creatingWords.206615377079364502e1.png",
     "static/media/theGame.png": "/static/media/theGame.ac99df13077511c18746.png",
     "static/media/swappingLetters.png": "/static/media/swappingLetters.a25c65320f14eecc5c97.png",
@@ -27,12 +28,14 @@
     "static/media/roboto-latin-700-normal.woff2": "/static/media/roboto-latin-700-normal.227c93190fe7f82de3f8.woff2",
     "static/media/roboto-latin-400-normal.woff2": "/static/media/roboto-latin-400-normal.b009a76ad6afe4ebd301.woff2",
     "static/media/roboto-latin-300-normal.woff2": "/static/media/roboto-latin-300-normal.c48fb6765a9fcb00b330.woff2",
+    "static/media/statsNumbers.png": "/static/media/statsNumbers.6c9180ff43d15e20e73c.png",
     "static/media/roboto-cyrillic-ext-400-normal.woff2": "/static/media/roboto-cyrillic-ext-400-normal.804378952da8a10faae2.woff2",
     "static/media/roboto-cyrillic-ext-300-normal.woff2": "/static/media/roboto-cyrillic-ext-300-normal.4777461b144e55145268.woff2",
     "static/media/roboto-cyrillic-ext-500-normal.woff2": "/static/media/roboto-cyrillic-ext-500-normal.62ced72e5832f02c2796.woff2",
     "static/media/roboto-cyrillic-ext-700-normal.woff2": "/static/media/roboto-cyrillic-ext-700-normal.be4d02458ce53887dc37.woff2",
     "static/media/roboto-latin-ext-400-normal.woff2": "/static/media/roboto-latin-ext-400-normal.861b791f9de857a6e7bc.woff2",
     "static/media/roboto-latin-ext-700-normal.woff2": "/static/media/roboto-latin-ext-700-normal.ed67ad54b1a8f5d21150.woff2",
+    "static/media/logo.png": "/static/media/logo.c1b1bf44dcdddc57e883.png",
     "static/media/roboto-latin-ext-500-normal.woff2": "/static/media/roboto-latin-ext-500-normal.9165081d10e1ba601384.woff2",
     "static/media/roboto-latin-ext-300-normal.woff2": "/static/media/roboto-latin-ext-300-normal.dc7dcec8e3f654e0ed63.woff2",
     "static/media/roboto-cyrillic-500-normal.woff2": "/static/media/roboto-cyrillic-500-normal.cad7d3d9cb265e334e58.woff2",
@@ -54,10 +57,10 @@
     "static/media/roboto-greek-ext-700-normal.woff2": "/static/media/roboto-greek-ext-700-normal.bd9854c751441ccc1a70.woff2",
     "index.html": "/index.html",
     "main.ec2afee5.css.map": "/static/css/main.ec2afee5.css.map",
-    "main.0495a769.js.map": "/static/js/main.0495a769.js.map"
+    "main.3ab2e027.js.map": "/static/js/main.3ab2e027.js.map"
   },
   "entrypoints": [
     "static/css/main.ec2afee5.css",
-    "static/js/main.0495a769.js"
+    "static/js/main.3ab2e027.js"
   ]
 }
