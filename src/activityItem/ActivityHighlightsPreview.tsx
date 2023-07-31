@@ -2,9 +2,7 @@ import ActivityInformation from '../activities/ActivityInformation';
 import React from 'react';
 import Tooltip from '@mui/material/Tooltip';
 import Highlight from '../activities/Highlight';
-import HighlightType from '../activities/HighlightType';
-import PhotoIcon from '@mui/icons-material/Photo';
-import OpenInNewIcon from '@mui/icons-material/OpenInNew';
+import {highlightIconMap} from '../components/HighlightItem';
 
 interface ActivityHighlightsPreviewProps {
 	activity: ActivityInformation;
@@ -41,13 +39,8 @@ interface HighlightPreviewProps {
 	highlight: Highlight;
 }
 function HighlightPreview(props: HighlightPreviewProps) {
-	if (props.highlight.type === HighlightType.Image) {
-		return <PhotoIcon />;
-	}
-	if (props.highlight.type === HighlightType.Link) {
-		return <OpenInNewIcon />;
-	}
-	return null;
+	const Icon = highlightIconMap[props.highlight.type];
+	return <Icon />;
 }
 
 export default ActivityHighlightsPreview;

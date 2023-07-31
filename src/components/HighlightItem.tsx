@@ -3,12 +3,16 @@ import HighlightType from '../activities/HighlightType';
 import React from 'react';
 import ExternalLink from './ExternalLink';
 import OpenInNewIcon from '@mui/icons-material/OpenInNew';
+import SvgIcon from '@mui/material/SvgIcon';
+import PhotoIcon from '@mui/icons-material/Photo';
+import TextSnippetIcon from '@mui/icons-material/TextSnippet';
 
 interface HighlightItemProps {
 	highlight: Highlight;
 }
 
 function HighlightItem(props: HighlightItemProps) {
+	const Icon = highlightIconMap[props.highlight.type];
 	if (props.highlight.type === HighlightType.Image) {
 		// TODO: use header similar to ActivityTitle?
 		return (
@@ -32,7 +36,7 @@ function HighlightItem(props: HighlightItemProps) {
 			<div style={{marginBottom: '2em'}}>
 				<ExternalLink href={props.highlight.href} underline="none">
 					<h3 style={{marginBottom: '0.1em'}}>
-						<OpenInNewIcon style={{fontSize: '1.1em', marginBottom: '-0.2em', marginLeft: '-0.1em'}} />{' '}
+						<Icon style={{fontSize: '1.1em', marginBottom: '-0.2em', marginLeft: '-0.1em'}} />{' '}
 						<span style={{textDecoration: 'underline'}}>{props.highlight.title}</span>
 					</h3>
 				</ExternalLink>
@@ -42,5 +46,11 @@ function HighlightItem(props: HighlightItemProps) {
 	}
 	return null;
 }
+
+export const highlightIconMap: Record<HighlightType, typeof SvgIcon> = {
+	[HighlightType.Link]: OpenInNewIcon,
+	[HighlightType.Image]: PhotoIcon,
+	[HighlightType.Text]: TextSnippetIcon,
+};
 
 export default HighlightItem;
