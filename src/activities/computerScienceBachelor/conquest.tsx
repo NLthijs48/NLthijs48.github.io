@@ -2,6 +2,7 @@ import {EducationInformation} from '../ActivityInformation';
 import PlaceIcon from '@mui/icons-material/Place';
 import React from 'react';
 import ActivityType from '../ActivityType';
+import HighlightType from '../HighlightType';
 
 const conquest: EducationInformation = {
 	activityType: ActivityType.Education,
@@ -16,9 +17,19 @@ const conquest: EducationInformation = {
 	from: 'February 2015',
 	till: 'July 2015', // End of the project, I did some more updates later though
 	Icon: PlaceIcon,
-	// Original repository: https://github.com/VincentSmit/cappening
-	// - after I started working at Happening I updated it further in my own repo
-	website: 'https://github.com/NLthijs48/cappening',
+	highlights: [
+		{
+			type: HighlightType.Link,
+			href: 'https://github.com/VincentSmit/cappening',
+			title: 'GitHub repository used during the project',
+		},
+		{
+			type: HighlightType.Link,
+			href: 'https://github.com/NLthijs48/cappening',
+			title: 'GitHub repository of my fork',
+			caption: 'Includes later updates from when I started working at Happening',
+		},
+	],
 };
 
 export default conquest;

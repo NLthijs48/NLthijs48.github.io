@@ -2,6 +2,7 @@ import {EducationInformation} from '../ActivityInformation';
 import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
 import React from 'react';
 import ActivityType from '../ActivityType';
+import HighlightType from '../HighlightType';
 
 const dataScienceTimeTabling: EducationInformation = {
 	activityType: ActivityType.Education,
@@ -16,9 +17,17 @@ const dataScienceTimeTabling: EducationInformation = {
 	from: 'January 2016',
 	till: 'February 2016',
 	Icon: CalendarMonthIcon,
-	// TODO: make available a link to the paper
-	// TODO: link to the results page
-	website: 'https://github.com/NLthijs48/UTTimetabling',
+	highlights: [
+		{
+			type: HighlightType.Link,
+			href: 'https://github.com/NLthijs48/UTTimetabling',
+			title: 'GitHub repository',
+			caption: 'Contains the code for analyzing the data, the visualization website and the paper (LaTeX)',
+		},
+		// TODO: compile the LaTeX paper and link that here
+		// (see first try on Overleaf, layout is broken though)
+		// TODO: link to the results page
+	],
 };
 
 export default dataScienceTimeTabling;

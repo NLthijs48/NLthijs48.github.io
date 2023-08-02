@@ -7,6 +7,7 @@ import dataScienceTimeTabling from './dataScienceTimeTabling';
 import dataScienceGameTweets from './dataScienceGameTweets';
 import bachelorThesisFollowUp from './bachelorThesisFollowUp';
 import thales from './thales';
+import HighlightType from '../HighlightType';
 
 const computerScienceMaster: EducationInformation = {
 	activityType: ActivityType.Education,
@@ -16,7 +17,13 @@ const computerScienceMaster: EducationInformation = {
 	from: 'September 2015', // Started on the 1st
 	till: 'March 2018', // Presentation and diploma on the 7th
 	Icon: SchoolIcon,
-	website: 'https://www.utwente.nl/en/education/master/programmes/computer-science/',
+	highlights: [
+		{
+			type: HighlightType.Link,
+			href: 'https://www.utwente.nl/en/education/master/programmes/computer-science/',
+			title: 'University of Twente Computer Science Master programme',
+		},
+	],
 	activities: [masterThesis, bachelorThesisFollowUp, thales, dataScienceTimeTabling, dataScienceGameTweets],
 };
 
