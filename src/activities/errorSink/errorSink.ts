@@ -1,6 +1,7 @@
 import {HobbyInformation} from '../ActivityInformation';
 import FilterAltIcon from '@mui/icons-material/FilterAlt';
 import ActivityType from '../ActivityType';
+import HighlightType from '../HighlightType';
 
 const errorSink: HobbyInformation = {
 	activityType: ActivityType.Hobby,
@@ -11,7 +12,14 @@ const errorSink: HobbyInformation = {
 	from: 'May 2017',
 	till: 'May 2018',
 	Icon: FilterAltIcon,
-	website: 'https://github.com/NLthijs48/ErrorSink',
+	highlights: [
+		{
+			type: HighlightType.Link,
+			href: 'https://github.com/NLthijs48/ErrorSink',
+			title: 'GitHub repository',
+			caption: 'Source code of the plugin',
+		},
+	],
 };
 
 export default errorSink;
