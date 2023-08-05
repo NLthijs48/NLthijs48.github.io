@@ -2,8 +2,9 @@ import icon from '../images/icon-animated.svg';
 import Link from '@mui/material/Link';
 import FilteredActivityList from '../activityList/FilteredActivityList';
 import React from 'react';
+import {LayoutMode} from '../PageWrapper';
 
-function HomePage() {
+function HomePage(props: {layoutMode: LayoutMode}) {
 	return (
 		<>
 			<div
@@ -26,7 +27,7 @@ function HomePage() {
 				</div>
 			</div>
 
-			<FilteredActivityList />
+			<FilteredActivityList layoutMode={props.layoutMode} />
 		</>
 	);
 }

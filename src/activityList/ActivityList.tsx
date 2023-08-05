@@ -18,8 +18,19 @@ function ActivityList(props: ActivityListProps) {
 		[props.activities, activityTypeFilter]
 	);
 
+	// Use multi-column layout for sub activites on the home page
+	// - bit stupid to do this based on hLevel
+	const extraStyle =
+		props.hLevel === 3
+			? {
+					display: 'grid',
+					gap: '0 1em',
+					gridTemplateColumns: 'repeat(auto-fill, minmax(min(20em, 100%), 1fr))',
+			  }
+			: {};
+
 	return (
-		<div style={props.style}>
+		<div style={{...extraStyle, ...props.style}}>
 			{activities.map((activity, index) => (
 				<ActivityItem
 					key={index}

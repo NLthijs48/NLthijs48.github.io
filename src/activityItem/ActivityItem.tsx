@@ -43,7 +43,7 @@ function ActivityItem(props: ActivityItemProps) {
 			<div
 				style={{
 					paddingLeft: '2.5em',
-					paddingRight: '0.5em',
+					paddingRight: '1em',
 					flex: 1,
 					minWidth: 0,
 				}}
@@ -77,9 +77,9 @@ function ActivityItem(props: ActivityItemProps) {
 
 	return (
 		<div style={{borderRadius: '1em', ...props.style}} className={isOnActivityPage ? undefined : props.className}>
-			{content}
+			<div style={{maxWidth: '29em'}}>{content}</div>
 
-			{!!props.children && <div style={{paddingLeft: '2.5em'}}>{props.children}</div>}
+			{!!props.children && <div style={{paddingLeft: '2.5em', paddingRight: '1em'}}>{props.children}</div>}
 
 			{!!props.renderChildActivities && !!props.activity.activities && (
 				<div style={{paddingLeft: '2.5em'}}>

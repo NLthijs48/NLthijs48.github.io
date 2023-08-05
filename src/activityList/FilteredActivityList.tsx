@@ -3,10 +3,11 @@ import Filters, {FilterContext} from './Filters';
 import ActivityType from '../activities/ActivityType';
 import allActivities from '../activities/allActivities';
 import ActivityList from './ActivityList';
+import {LayoutMode} from '../PageWrapper';
 
 export const ACTIVITY_TYPE_FILTER_PARAMETER = 'activityType';
 
-function FilteredActivityList() {
+function FilteredActivityList(props: {layoutMode: LayoutMode}) {
 	const [activityTypeFilter, setActivityTypeFilter] = React.useState<null | ActivityType>(getActivityTypeFromUrl());
 
 	const setActivityType = React.useCallback(
@@ -26,7 +27,7 @@ function FilteredActivityList() {
 	);
 
 	return (
-		<div style={{fontSize: '2em'}}>
+		<div style={{fontSize: props.layoutMode === LayoutMode.Desktop ? '2em' : '1.5em'}}>
 			<Filters activityType={activityTypeFilter} setActivityType={setActivityType} style={{marginBottom: '1em'}} />
 
 			<FilterContext.Provider value={activityTypeFilter}>

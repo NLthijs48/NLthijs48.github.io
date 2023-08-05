@@ -35,7 +35,7 @@ function PageWrapper() {
 		page = <ActivityPage activity={activity} />;
 	} else {
 		isHome = true;
-		page = <HomePage />;
+		page = <HomePage layoutMode={layoutMode} />;
 	}
 
 	return (
@@ -55,7 +55,7 @@ function PageWrapper() {
 					<main
 						style={{
 							width: '100%',
-							maxWidth: 1000,
+							maxWidth: 1400,
 							paddingLeft: sideSpace,
 							paddingRight: sideSpace,
 							paddingTop: sideSpace,
