@@ -3,6 +3,7 @@ import FilterAltIcon from '@mui/icons-material/FilterAlt';
 import ActivityType from '../ActivityType';
 import HighlightType from '../HighlightType';
 import issueImage from './issue.png';
+import issuesList from './issuesList.png';
 
 const errorSink: HobbyInformation = {
 	activityType: ActivityType.Hobby,
@@ -32,6 +33,12 @@ const errorSink: HobbyInformation = {
 			title: 'Extensive configuration available',
 			caption:
 				'MineCraft servers with a bunch of plugins are spammy, therefore this plugin offers a couple ways to filter out errors that are not relevant',
+		},
+		{
+			type: HighlightType.Image,
+			image: issuesList,
+			title: 'Sentry issues list',
+			caption: 'All issues from the server are grouped by Sentry, so that number of occurrences and such are tracked nicely.',
 		},
 		{
 			type: HighlightType.Image,
