@@ -4,13 +4,22 @@ import ActivityType from '../ActivityType';
 import HighlightType from '../HighlightType';
 import issueImage from './issue.png';
 import issuesList from './issuesList.png';
+import logo from './logo.svg';
+import React from 'react';
 
 const errorSink: HobbyInformation = {
 	activityType: ActivityType.Hobby,
 	name: 'ErrorSink',
 	slug: 'minecraftErrorSink',
 	oneliner: 'Sentry.io integration for Minecraft servers, collects rich bug reports',
-	description: 'Hooks into the Log4j logging framework and Java hooks to collect all warnings, errors and exceptions.',
+	description: (
+		<div>
+			Hooks into the Log4j logging framework and Java hooks to collect all warnings, errors and exceptions.
+			<div>
+				<img src={logo} alt="ErrorSink logo: grey funnel with red, orange and yellow orbs falling into it" style={{height: 100}} />
+			</div>
+		</div>
+	),
 	from: 'May 2017',
 	till: 'May 2018',
 	Icon: FilterAltIcon,
