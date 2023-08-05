@@ -14,7 +14,11 @@ function HomePage(props: {layoutMode: LayoutMode}) {
 					marginBottom: '4em',
 				}}
 			>
-				<img src={icon} className="App-logo" alt="Logo" style={{height: '5em', width: '5em', marginTop: '0.2em'}} />
+				<img
+					src={icon}
+					alt="Logo: orange background with 2 white spinning gears, one a bit bigger than the other"
+					style={{height: '5em', width: '5em', marginTop: '0.2em'}}
+				/>
 
 				<div style={{flex: 1, marginLeft: '2em'}}>
 					<h1 style={{marginTop: 0, marginBottom: '0.5em'}}>Hey, I'm Thijs!</h1>
