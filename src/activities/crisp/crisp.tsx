@@ -12,14 +12,19 @@ import multiWarehouse from './multiWarehouse';
 import international from './international';
 import tiger from './tiger';
 import HighlightType from '../HighlightType';
+import logo from './logo.png';
 
 const crisp: JobInformation = {
 	activityType: ActivityType.Job,
 	name: 'Crisp',
 	slug: 'crisp',
-	oneliner: (
+	oneliner: 'Full stack developer and tech-lead of the tech-warehouse team, supercharging warehouse, hub and last-mile tools.',
+	description: (
 		<div>
-			Revamping the food logistics chain from{' '}
+			<div>
+				<img src={logo} alt="Crisp logo: wordmark in white on top of a dark blue/green background" style={{height: 100}} />
+			</div>
+			Crisp is revamping the food logistics chain from{' '}
 			<AgricultureIcon style={{opacity: 0.6, fontSize: '130%', marginBottom: '-0.2em', marginRight: '0.1em'}} />
 			supplier to <PersonIcon style={{opacity: 0.6, fontSize: '130%', marginBottom: '-0.2em'}} />
 			customer.
@@ -27,6 +32,11 @@ const crisp: JobInformation = {
 				I worked on the consumer grocery ordering app (initial setup and recipe feature in particular), the internal portal for
 				managing all data, and a ton of warehouse and logistics tools (product availability calculation, automatic purchasing, label
 				printing, multiple picking system iterations).
+			</div>
+			<div style={{marginTop: '0.5em'}}>
+				Currently leading the tech-warehouse team consisting of 5 developers and a product owner. Together we are scaling up the
+				operations from receiving products at warehouses, logistic tools to pick orders, tools to transfer those orders to delivery
+				vehicles and hubs.
 			</div>
 		</div>
 	),
