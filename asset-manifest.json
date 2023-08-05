@@ -1,10 +1,11 @@
 {
   "files": {
     "main.css": "/static/css/main.ec2afee5.css",
-    "main.js": "/static/js/main.8afaa7eb.js",
+    "main.js": "/static/js/main.efad0e01.js",
+    "static/media/pictures.png": "/static/media/pictures.331f525a4b333c67aeca.png",
+    "static/media/home.png": "/static/media/home.22740d88bb215045c43a.png",
     "static/media/hotel.png": "/static/media/hotel.ef7232d14e386052014c.png",
     "static/media/overview.png": "/static/media/overview.441107cdcdf5d8b4d970.png",
-    "static/media/home.png": "/static/media/home.22740d88bb215045c43a.png",
     "static/media/bookings.jpg": "/static/media/bookings.37bf49a6b89e09bc9885.jpg",
     "static/media/chat.jpg": "/static/media/chat.fa0934eb23e6a33ad60b.jpg",
     "static/media/content.jpg": "/static/media/content.752b78aad84d069166a3.jpg",
@@ -13,6 +14,7 @@
     "static/media/statisticsTypeScript.png": "/static/media/statisticsTypeScript.7eae76040e2debf3078f.png",
     "static/media/chat.png": "/static/media/chat.2bcb77be8d1f9be624dd.png",
     "static/media/stageStatistics.png": "/static/media/stageStatistics.8f276988c1f0388fb484.png",
+    "static/media/logo.png": "/static/media/logo.c1b1bf44dcdddc57e883.png",
     "static/media/roboto-all-500-normal.woff": "/static/media/roboto-all-500-normal.0ab669b7a0d19b178f57.woff",
     "static/media/roboto-all-700-normal.woff": "/static/media/roboto-all-700-normal.a457fde362a540fcadff.woff",
     "static/media/roboto-all-400-normal.woff": "/static/media/roboto-all-400-normal.c5d001fa922fa66a147f.woff",
@@ -37,7 +39,6 @@
     "static/media/roboto-cyrillic-ext-700-normal.woff2": "/static/media/roboto-cyrillic-ext-700-normal.be4d02458ce53887dc37.woff2",
     "static/media/roboto-latin-ext-400-normal.woff2": "/static/media/roboto-latin-ext-400-normal.861b791f9de857a6e7bc.woff2",
     "static/media/roboto-latin-ext-700-normal.woff2": "/static/media/roboto-latin-ext-700-normal.ed67ad54b1a8f5d21150.woff2",
-    "static/media/logo.png": "/static/media/logo.c1b1bf44dcdddc57e883.png",
     "static/media/roboto-latin-ext-500-normal.woff2": "/static/media/roboto-latin-ext-500-normal.9165081d10e1ba601384.woff2",
     "static/media/roboto-latin-ext-300-normal.woff2": "/static/media/roboto-latin-ext-300-normal.dc7dcec8e3f654e0ed63.woff2",
     "static/media/roboto-cyrillic-500-normal.woff2": "/static/media/roboto-cyrillic-500-normal.cad7d3d9cb265e334e58.woff2",
@@ -60,10 +61,10 @@
     "static/media/logo.svg": "/static/media/logo.8a6fca9d52549e005195382d29acc6a1.svg",
     "index.html": "/index.html",
     "main.ec2afee5.css.map": "/static/css/main.ec2afee5.css.map",
-    "main.8afaa7eb.js.map": "/static/js/main.8afaa7eb.js.map"
+    "main.efad0e01.js.map": "/static/js/main.efad0e01.js.map"
   },
   "entrypoints": [
     "static/css/main.ec2afee5.css",
-    "static/js/main.8afaa7eb.js"
+    "static/js/main.efad0e01.js"
   ]
 }
