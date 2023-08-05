@@ -1,13 +1,14 @@
 {
   "files": {
     "main.css": "/static/css/main.ec2afee5.css",
-    "main.js": "/static/js/main.69e16e35.js",
+    "main.js": "/static/js/main.66088fde.js",
     "static/media/hotel.png": "/static/media/hotel.ef7232d14e386052014c.png",
     "static/media/overview.png": "/static/media/overview.441107cdcdf5d8b4d970.png",
     "static/media/home.png": "/static/media/home.22740d88bb215045c43a.png",
     "static/media/bookings.jpg": "/static/media/bookings.37bf49a6b89e09bc9885.jpg",
     "static/media/chat.jpg": "/static/media/chat.fa0934eb23e6a33ad60b.jpg",
     "static/media/content.jpg": "/static/media/content.752b78aad84d069166a3.jpg",
+    "static/media/issue.png": "/static/media/issue.d30acb2f455647a3035e.png",
     "static/media/statisticsTypeScript.png": "/static/media/statisticsTypeScript.7eae76040e2debf3078f.png",
     "static/media/chat.png": "/static/media/chat.2bcb77be8d1f9be624dd.png",
     "static/media/stageStatistics.png": "/static/media/stageStatistics.8f276988c1f0388fb484.png",
@@ -57,10 +58,10 @@
     "static/media/roboto-greek-ext-700-normal.woff2": "/static/media/roboto-greek-ext-700-normal.bd9854c751441ccc1a70.woff2",
     "index.html": "/index.html",
     "main.ec2afee5.css.map": "/static/css/main.ec2afee5.css.map",
-    "main.69e16e35.js.map": "/static/js/main.69e16e35.js.map"
+    "main.66088fde.js.map": "/static/js/main.66088fde.js.map"
   },
   "entrypoints": [
     "static/css/main.ec2afee5.css",
-    "static/js/main.69e16e35.js"
+    "static/js/main.66088fde.js"
   ]
 }
