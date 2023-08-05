@@ -14,9 +14,6 @@ const websiteErveGetkot: JobInformation = {
 	oneliner: 'Website for a place that rents out rural holiday apartments.',
 	description: (
 		<div>
-			This is a project done for Erve Getkot, which has a couple of apartments in the middle of nature. The website for Erve Getkot
-			shows the possibilities that they offer and showcases the apartments. The website is responsive, suitable for mobile phones and
-			tablets. The design has been made by Stef Heerink (HeerINC), and build by me using Joomla with a custom template.
 			<div>
 				<img
 					src={logo}
@@ -24,6 +21,9 @@ const websiteErveGetkot: JobInformation = {
 					style={{height: 100, marginTop: '0.5em'}}
 				/>
 			</div>
+			This is a project done for Erve Getkot, which has a couple of apartments in the middle of nature. The website for Erve Getkot
+			shows the possibilities that they offer and showcases the apartments. The website is responsive, suitable for mobile phones and
+			tablets. The design has been made by Stef Heerink (HeerINC), and build by me using Joomla with a custom template.
 		</div>
 	),
 	from: 'October 2013',

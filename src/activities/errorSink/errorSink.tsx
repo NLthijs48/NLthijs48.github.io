@@ -14,10 +14,10 @@ const errorSink: HobbyInformation = {
 	oneliner: 'Sentry.io integration for Minecraft servers, collects rich bug reports',
 	description: (
 		<div>
-			Hooks into the Log4j logging framework and Java hooks to collect all warnings, errors and exceptions.
 			<div>
 				<img src={logo} alt="ErrorSink logo: grey funnel with red, orange and yellow orbs falling into it" style={{height: 100}} />
 			</div>
+			Hooks into the Log4j logging framework and Java hooks to collect all warnings, errors and exceptions.
 		</div>
 	),
 	from: 'May 2017',
