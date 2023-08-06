@@ -34,7 +34,7 @@ const areaShop: HobbyInformation = {
 	highlights: [
 		{
 			type: HighlightType.Link,
-			title: 'Source code on GitHub',
+			title: 'GitHub repository',
 			href: 'https://github.com/NLthijs48/AreaShop',
 			caption: 'All code was open source from the start, with some occasional contributions from the community',
 		},
