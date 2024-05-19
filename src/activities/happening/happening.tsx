@@ -6,6 +6,7 @@ import battleWords from './battleWords';
 import splitTheBill from './splitTheBill';
 import whereabouts from './whereabouts';
 import commitLog from './commitLog';
+import HighlightType from '../HighlightType';
 
 const happening: JobInformation = {
 	activityType: ActivityType.Job,
@@ -20,7 +21,7 @@ const happening: JobInformation = {
 	from: 'July 2015',
 	till: 'Augustus 2016',
 	Icon: QuestionAnswerIcon,
-	website: 'https://happening.im',
+	highlights: [{type: HighlightType.Link, href: 'https://happening.im', title: 'Happening website'}],
 	activities: [battleWords, commitLog, whereabouts, splitTheBill],
 };
 
