@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.ec2afee5.css",
-    "main.js": "/static/js/main.5e2af937.js",
+    "main.js": "/static/js/main.655e9a9c.js",
     "static/media/members.png": "/static/media/members.01fc702e4eb3af353661.png",
     "static/media/contact.png": "/static/media/contact.040b7925c6aa82454346.png",
     "static/media/pictures.png": "/static/media/pictures.331f525a4b333c67aeca.png",
@@ -16,7 +16,10 @@
     "static/media/speeddate.jpg": "/static/media/speeddate.702a44c84d0a24ba14b1.jpg",
     "static/media/frontpage.jpg": "/static/media/frontpage.1792d3a865c9bbb9bd2d.jpg",
     "static/media/filters.png": "/static/media/filters.555af284ac19916f2e73.png",
+    "static/media/setupBeacons.png": "/static/media/setupBeacons.e3418ddc1c9382b42806.png",
     "static/media/matchInfo.jpg": "/static/media/matchInfo.e91c30e57336b1ef2097.jpg",
+    "static/media/gameMain.png": "/static/media/gameMain.77809a971c0312ac7a6e.png",
+    "static/media/setupArea.png": "/static/media/setupArea.20e37bb30bb6a460cd42.png",
     "static/media/commits.png": "/static/media/commits.31a1084d8f979f871f47.png",
     "static/media/issuesList.png": "/static/media/issuesList.1d25d43caa74e81bf707.png",
     "static/media/issue.png": "/static/media/issue.d30acb2f455647a3035e.png",
@@ -35,11 +38,16 @@
     "static/media/previousRounds.png": "/static/media/previousRounds.b48c71c3b242fde6b207.png",
     "static/media/endOfRound.png": "/static/media/endOfRound.72f18f77d12132f8b86f.png",
     "static/media/stageTesting.png": "/static/media/stageTesting.f80e34c0fcf10969f55e.png",
+    "static/media/leaderboard.png": "/static/media/leaderboard.5502b34dab3fbc90b602.png",
     "static/media/statsGraph.png": "/static/media/statsGraph.267566f12ab09666bbe3.png",
     "static/media/creatingWords.png": "/static/media/creatingWords.206615377079364502e1.png",
+    "static/media/events.png": "/static/media/events.749ef20a7f47ed31a284.png",
     "static/media/theGame.png": "/static/media/theGame.ac99df13077511c18746.png",
     "static/media/swappingLetters.png": "/static/media/swappingLetters.a25c65320f14eecc5c97.png",
+    "static/media/capturingProgress.png": "/static/media/capturingProgress.f3bee46d2f9a9fe25ebc.png",
+    "static/media/setupSettings.png": "/static/media/setupSettings.8db0f5100d44344684a2.png",
     "static/media/settings.png": "/static/media/settings.15ea2ec22e945270d334.png",
+    "static/media/capturedProgress.png": "/static/media/capturedProgress.9500ead0299cd8633ff1.png",
     "static/media/roboto-latin-500-normal.woff2": "/static/media/roboto-latin-500-normal.f25d774ecfe0996f8eb5.woff2",
     "static/media/roboto-latin-700-normal.woff2": "/static/media/roboto-latin-700-normal.227c93190fe7f82de3f8.woff2",
     "static/media/roboto-latin-400-normal.woff2": "/static/media/roboto-latin-400-normal.b009a76ad6afe4ebd301.woff2",
@@ -74,10 +82,10 @@
     "static/media/logo.svg": "/static/media/logo.8a6fca9d52549e005195382d29acc6a1.svg",
     "index.html": "/index.html",
     "main.ec2afee5.css.map": "/static/css/main.ec2afee5.css.map",
-    "main.5e2af937.js.map": "/static/js/main.5e2af937.js.map"
+    "main.655e9a9c.js.map": "/static/js/main.655e9a9c.js.map"
   },
   "entrypoints": [
     "static/css/main.ec2afee5.css",
-    "static/js/main.5e2af937.js"
+    "static/js/main.655e9a9c.js"
   ]
 }
