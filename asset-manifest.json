@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.ec2afee5.css",
-    "main.js": "/static/js/main.e365b7cd.js",
+    "main.js": "/static/js/main.acb2d297.js",
     "static/media/pictures.png": "/static/media/pictures.331f525a4b333c67aeca.png",
     "static/media/home.png": "/static/media/home.22740d88bb215045c43a.png",
     "static/media/hotel.png": "/static/media/hotel.ef7232d14e386052014c.png",
@@ -13,7 +13,9 @@
     "static/media/takequiz.jpg": "/static/media/takequiz.9d9e1f8e08e2a7109bac.jpg",
     "static/media/speeddate.jpg": "/static/media/speeddate.702a44c84d0a24ba14b1.jpg",
     "static/media/frontpage.jpg": "/static/media/frontpage.1792d3a865c9bbb9bd2d.jpg",
+    "static/media/filters.png": "/static/media/filters.555af284ac19916f2e73.png",
     "static/media/matchInfo.jpg": "/static/media/matchInfo.e91c30e57336b1ef2097.jpg",
+    "static/media/commits.png": "/static/media/commits.31a1084d8f979f871f47.png",
     "static/media/issuesList.png": "/static/media/issuesList.1d25d43caa74e81bf707.png",
     "static/media/issue.png": "/static/media/issue.d30acb2f455647a3035e.png",
     "static/media/statisticsTypeScript.png": "/static/media/statisticsTypeScript.7eae76040e2debf3078f.png",
@@ -68,10 +70,10 @@
     "static/media/logo.svg": "/static/media/logo.8a6fca9d52549e005195382d29acc6a1.svg",
     "index.html": "/index.html",
     "main.ec2afee5.css.map": "/static/css/main.ec2afee5.css.map",
-    "main.e365b7cd.js.map": "/static/js/main.e365b7cd.js.map"
+    "main.acb2d297.js.map": "/static/js/main.acb2d297.js.map"
   },
   "entrypoints": [
     "static/css/main.ec2afee5.css",
-    "static/js/main.e365b7cd.js"
+    "static/js/main.acb2d297.js"
   ]
 }
