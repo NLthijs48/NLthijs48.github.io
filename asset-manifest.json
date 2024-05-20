@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.ec2afee5.css",
-    "main.js": "/static/js/main.acb2d297.js",
+    "main.js": "/static/js/main.636fa7fa.js",
     "static/media/pictures.png": "/static/media/pictures.331f525a4b333c67aeca.png",
     "static/media/home.png": "/static/media/home.22740d88bb215045c43a.png",
     "static/media/hotel.png": "/static/media/hotel.ef7232d14e386052014c.png",
@@ -22,6 +22,7 @@
     "static/media/questions.jpg": "/static/media/questions.95a7183334bc4f572a9b.jpg",
     "static/media/mainscreen.jpg": "/static/media/mainscreen.d4bfe3dbfcddc4b44ca6.jpg",
     "static/media/chat.png": "/static/media/chat.2bcb77be8d1f9be624dd.png",
+    "static/media/prefixSumParallel.png": "/static/media/prefixSumParallel.2dc5c1e1443ba54ab7b7.png",
     "static/media/stageStatistics.png": "/static/media/stageStatistics.8f276988c1f0388fb484.png",
     "static/media/logo.png": "/static/media/logo.c1b1bf44dcdddc57e883.png",
     "static/media/roboto-all-500-normal.woff": "/static/media/roboto-all-500-normal.0ab669b7a0d19b178f57.woff",
@@ -50,6 +51,7 @@
     "static/media/roboto-latin-ext-700-normal.woff2": "/static/media/roboto-latin-ext-700-normal.ed67ad54b1a8f5d21150.woff2",
     "static/media/roboto-latin-ext-500-normal.woff2": "/static/media/roboto-latin-ext-500-normal.9165081d10e1ba601384.woff2",
     "static/media/roboto-latin-ext-300-normal.woff2": "/static/media/roboto-latin-ext-300-normal.dc7dcec8e3f654e0ed63.woff2",
+    "static/media/prefixSum.png": "/static/media/prefixSum.57f35b6cdd37b8f405f4.png",
     "static/media/roboto-cyrillic-500-normal.woff2": "/static/media/roboto-cyrillic-500-normal.cad7d3d9cb265e334e58.woff2",
     "static/media/roboto-cyrillic-700-normal.woff2": "/static/media/roboto-cyrillic-700-normal.d010f1f324e111a22e53.woff2",
     "static/media/roboto-cyrillic-400-normal.woff2": "/static/media/roboto-cyrillic-400-normal.71a33b6b50457b2c903a.woff2",
@@ -70,10 +72,10 @@
     "static/media/logo.svg": "/static/media/logo.8a6fca9d52549e005195382d29acc6a1.svg",
     "index.html": "/index.html",
     "main.ec2afee5.css.map": "/static/css/main.ec2afee5.css.map",
-    "main.acb2d297.js.map": "/static/js/main.acb2d297.js.map"
+    "main.636fa7fa.js.map": "/static/js/main.636fa7fa.js.map"
   },
   "entrypoints": [
     "static/css/main.ec2afee5.css",
-    "static/js/main.acb2d297.js"
+    "static/js/main.636fa7fa.js"
   ]
 }
