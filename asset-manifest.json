@@ -1,11 +1,14 @@
 {
   "files": {
     "main.css": "/static/css/main.ec2afee5.css",
-    "main.js": "/static/js/main.772e7b95.js",
+    "main.js": "/static/js/main.5b31dbec.js",
     "static/media/members.png": "/static/media/members.01fc702e4eb3af353661.png",
     "static/media/contact.png": "/static/media/contact.040b7925c6aa82454346.png",
     "static/media/pictures.png": "/static/media/pictures.331f525a4b333c67aeca.png",
     "static/media/home.png": "/static/media/home.22740d88bb215045c43a.png",
+    "static/media/news.png": "/static/media/news.0e3aae24b8372da351b5.png",
+    "static/media/frontpage.png": "/static/media/frontpage.9f3cbf09f90b91286bb0.png",
+    "static/media/projects.png": "/static/media/projects.0ce1b9cc19d7e276cfd9.png",
     "static/media/hotel.png": "/static/media/hotel.ef7232d14e386052014c.png",
     "static/media/overview.png": "/static/media/overview.441107cdcdf5d8b4d970.png",
     "static/media/bookings.jpg": "/static/media/bookings.37bf49a6b89e09bc9885.jpg",
@@ -83,10 +86,10 @@
     "static/media/logo.svg": "/static/media/logo.8a6fca9d52549e005195382d29acc6a1.svg",
     "index.html": "/index.html",
     "main.ec2afee5.css.map": "/static/css/main.ec2afee5.css.map",
-    "main.772e7b95.js.map": "/static/js/main.772e7b95.js.map"
+    "main.5b31dbec.js.map": "/static/js/main.5b31dbec.js.map"
   },
   "entrypoints": [
     "static/css/main.ec2afee5.css",
-    "static/js/main.772e7b95.js"
+    "static/js/main.5b31dbec.js"
   ]
 }
