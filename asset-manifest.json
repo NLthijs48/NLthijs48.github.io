@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.ec2afee5.css",
-    "main.js": "/static/js/main.655e9a9c.js",
+    "main.js": "/static/js/main.772e7b95.js",
     "static/media/members.png": "/static/media/members.01fc702e4eb3af353661.png",
     "static/media/contact.png": "/static/media/contact.040b7925c6aa82454346.png",
     "static/media/pictures.png": "/static/media/pictures.331f525a4b333c67aeca.png",
@@ -26,6 +26,7 @@
     "static/media/statisticsTypeScript.png": "/static/media/statisticsTypeScript.7eae76040e2debf3078f.png",
     "static/media/questions.jpg": "/static/media/questions.95a7183334bc4f572a9b.jpg",
     "static/media/mainscreen.jpg": "/static/media/mainscreen.d4bfe3dbfcddc4b44ca6.jpg",
+    "static/media/assassinsCreedGraph.jpg": "/static/media/assassinsCreedGraph.b082f477e4eaca8bc3c9.jpg",
     "static/media/chat.png": "/static/media/chat.2bcb77be8d1f9be624dd.png",
     "static/media/prefixSumParallel.png": "/static/media/prefixSumParallel.2dc5c1e1443ba54ab7b7.png",
     "static/media/stageStatistics.png": "/static/media/stageStatistics.8f276988c1f0388fb484.png",
@@ -82,10 +83,10 @@
     "static/media/logo.svg": "/static/media/logo.8a6fca9d52549e005195382d29acc6a1.svg",
     "index.html": "/index.html",
     "main.ec2afee5.css.map": "/static/css/main.ec2afee5.css.map",
-    "main.655e9a9c.js.map": "/static/js/main.655e9a9c.js.map"
+    "main.772e7b95.js.map": "/static/js/main.772e7b95.js.map"
   },
   "entrypoints": [
     "static/css/main.ec2afee5.css",
-    "static/js/main.655e9a9c.js"
+    "static/js/main.772e7b95.js"
   ]
 }
