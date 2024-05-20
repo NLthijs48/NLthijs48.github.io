@@ -8,6 +8,7 @@ import whereabouts from './whereabouts';
 import commitLog from './commitLog';
 import HighlightType from '../HighlightType';
 import logo from './logo.png';
+import conquest from '../computerScienceBachelor/conquest';
 
 const happening: JobInformation = {
 	activityType: ActivityType.Job,
@@ -29,7 +30,7 @@ const happening: JobInformation = {
 	till: 'Augustus 2016',
 	Icon: QuestionAnswerIcon,
 	highlights: [{type: HighlightType.Link, href: 'https://happening.im', title: 'Happening website'}],
-	activities: [battleWords, commitLog, whereabouts, splitTheBill],
+	activities: [battleWords, commitLog, whereabouts, splitTheBill, conquest],
 };
 
 export default happening;
