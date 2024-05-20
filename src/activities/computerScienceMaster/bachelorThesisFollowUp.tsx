@@ -31,6 +31,16 @@ const bachelorThesisFollowUp: EducationInformation = {
 			href: '/files/bachelorThesisFollowUpPaper.pdf',
 			title: 'Paper (pdf)',
 		},
+		{
+			type: HighlightType.Link,
+			href: 'https://vercors.ewi.utwente.nl/',
+			title: 'VerCors project website',
+		},
+		{
+			type: HighlightType.Link,
+			href: 'https://github.com/utwente-fmt/vercors',
+			title: 'VerCors GitHub repository',
+		},
 	],
 };
 

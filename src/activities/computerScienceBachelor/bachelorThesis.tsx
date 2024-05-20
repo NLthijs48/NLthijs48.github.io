@@ -22,6 +22,16 @@ const bachelorThesis: EducationInformation = {
 			title: 'The paper: Optimization, Specification and Verification of the Prefix Sum Program in an OpenCL Environment (pdf)',
 		},
 		{
+			type: HighlightType.Link,
+			href: 'https://vercors.ewi.utwente.nl/',
+			title: 'VerCors project website',
+		},
+		{
+			type: HighlightType.Link,
+			href: 'https://github.com/utwente-fmt/vercors',
+			title: 'VerCors GitHub repository',
+		},
+		{
 			type: HighlightType.Image,
 			image: prefixSum,
 			title: 'Prefix sum calculation',
