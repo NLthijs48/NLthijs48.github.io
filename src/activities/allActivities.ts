@@ -17,10 +17,12 @@ import kosc from './kosc/kosc';
 import goCraft from './goCraft/goCraft';
 import playerWarps from './playerWarps/playerWarps';
 import paiq from './paiq/paiq';
+import openStreetMap from './openStreetMap/openStreetMap';
 
 const allActivities: ActivityInformation[] = [
 	crisp,
 	homeAssistant,
+	openStreetMap,
 	staying,
 	computerScienceMaster,
 	errorSink,
