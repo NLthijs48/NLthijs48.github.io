@@ -13,6 +13,7 @@ import international from './international';
 import tiger from './tiger';
 import HighlightType from '../HighlightType';
 import logo from './logo.png';
+import freshBread from './freshBread';
 
 const crisp: JobInformation = {
 	activityType: ActivityType.Job,
@@ -54,7 +55,7 @@ const crisp: JobInformation = {
 			title: 'Crisp LinkedIn',
 		},
 	],
-	activities: [tiger, multiWarehouse, international, multiOrderPick, recipes, pickIntoPackaging, launch],
+	activities: [freshBread, tiger, multiWarehouse, international, multiOrderPick, recipes, pickIntoPackaging, launch],
 };
 
 export default crisp;
