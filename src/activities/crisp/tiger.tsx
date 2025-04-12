@@ -6,6 +6,7 @@ import stageTesting from './tiger/stageTesting.png';
 import stageStatistics from './tiger/stageStatistics.png';
 import statisticsTypeScript from './tiger/statisticsTypeScript.png';
 import overview from './tiger/overview.png';
+import ExternalLink from '../../components/ExternalLink';
 
 const tiger: JobInformation = {
 	activityType: ActivityType.Job,
@@ -17,9 +18,15 @@ const tiger: JobInformation = {
 			Initially created during a tech hackweek to show live CI progress on a TV that is the office. It helped a lot to improve the
 			speed of CI because it gives insight into which steps take long. Later expanded with codebase statistics to set tech stack
 			improvement goals.
+			<div style={{marginTop: '0.5em'}}>
+				After migrating to the <ExternalLink href="https://buildkite.com/">BuildKite</ExternalLink> CI software this dashboard was
+				phased out, because the CI queue is now properly displayed in there. All statistics are now displayed in BuildKite as well,
+				and new ones have been added, they remain important to nudge the codebase in the right direction.
+			</div>
 		</div>
 	),
 	from: 'June 2022', // Start during the Tech Hackweek
+	till: 'November 2024', // Switched to BuildKite, don't need Tiger anymore, statistics integrated into BuildKite instead
 	Icon: BuildIcon,
 	highlights: [
 		{
