@@ -21,6 +21,18 @@ interface HighlightImage extends HighlightBase {
 	caption?: string;
 	fullHeight?: boolean;
 }
+
+interface HighlightVideo extends HighlightBase {
+	type: HighlightType.Video;
+	/**
+	 * Absolute url to the video, excluding the domain name
+	 * - currently implemented by placing a file in the /files folder
+	 */
+	video: string;
+	title: string;
+	caption?: string;
+}
+
 interface HighlightLink extends HighlightBase {
 	type: HighlightType.Link;
 	title: string;
@@ -29,6 +41,6 @@ interface HighlightLink extends HighlightBase {
 	// TODO: support image?
 }
 
-type Highlight = HighlightText | HighlightImage | HighlightLink;
+type Highlight = HighlightText | HighlightImage | HighlightVideo | HighlightLink;
 
 export default Highlight;

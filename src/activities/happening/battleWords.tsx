@@ -31,6 +31,13 @@ const battleWords: JobInformation = {
 
 	highlights: [
 		{
+			type: HighlightType.Video,
+			video: '/files/happeningBattleWordsRoundEndAnimation.mp4',
+			title: 'Round results animation',
+			caption:
+				'After a round is complete, the results are shown in an animation of the board. Words are placed from lowest to highest points, if the higher ones are incompatible they "blow up" the lower score ones.',
+		},
+		{
 			type: HighlightType.Image,
 			image: theGameImage,
 			title: 'The game',

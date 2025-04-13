@@ -6,6 +6,7 @@ import OpenInNewIcon from '@mui/icons-material/OpenInNew';
 import SvgIcon from '@mui/material/SvgIcon';
 import PhotoIcon from '@mui/icons-material/Photo';
 import TextSnippetIcon from '@mui/icons-material/TextSnippet';
+import VideocamIcon from '@mui/icons-material/Videocam';
 
 interface HighlightItemProps {
 	highlight: Highlight;
@@ -29,6 +30,29 @@ function HighlightItem(props: HighlightItemProps) {
 					src={props.highlight.image}
 					alt={props.highlight.title}
 					style={{maxHeight: props.highlight.fullHeight ? undefined : '50em', maxWidth: '100%'}}
+				/>
+			</figure>
+		);
+	}
+	if (props.highlight.type === HighlightType.Video) {
+		return (
+			<figure style={{margin: 0, marginBottom: '2em', maxWidth: '100%'}}>
+				<figcaption>
+					<h3 style={{marginBottom: '0.1em'}}>
+						<Icon style={{fontSize: '1.2em', marginBottom: '-0.2em', marginLeft: '-0.1em', opacity: 0.7}} />{' '}
+						{props.highlight.title}
+					</h3>
+					{!!props.highlight.caption && <div style={{maxWidth: '40em', marginBottom: '0.5em'}}>{props.highlight.caption}</div>}
+				</figcaption>
+
+				<video
+					src={props.highlight.video}
+					style={{maxHeight: '50em', maxWidth: '100%'}}
+					autoPlay
+					controls
+					loop
+					muted
+					disablePictureInPicture
 				/>
 			</figure>
 		);
@@ -60,6 +84,7 @@ function HighlightItem(props: HighlightItemProps) {
 export const highlightIconMap: Record<HighlightType, typeof SvgIcon> = {
 	[HighlightType.Link]: OpenInNewIcon,
 	[HighlightType.Image]: PhotoIcon,
+	[HighlightType.Video]: VideocamIcon,
 	[HighlightType.Text]: TextSnippetIcon,
 };
 
