@@ -1,17 +1,41 @@
 import {HobbyInformation} from '../ActivityInformation';
 import SportsSoccerIcon from '@mui/icons-material/SportsSoccer';
 import ActivityType from '../ActivityType';
+import HighlightType from '../HighlightType';
+import home from './home.jpg';
+import gameResults from './upcomingGames.jpg';
 
 const kosc: HobbyInformation = {
 	activityType: ActivityType.Hobby,
-	name: 'KOSC',
+	name: 'KOSC soccer club',
 	slug: 'kosc',
 	oneliner: 'Website and surrounding systems for a soccer club, as a volunteer as part of the IT committee.',
 	from: 'May 2011', // Joined as a volunteer
 	till: 'April 2018',
 	Icon: SportsSoccerIcon,
-	// Got replaced by a newer version
-	website: 'https://kosc.nl/',
+	highlights: [
+		{
+			type: HighlightType.Image,
+			title: 'Home page',
+			image: home,
+			caption:
+				'Home page with access to all teams and important club information. The center is filled with news about the latest events. Sponsors are displayed in carousels that rotate through all fo them. Upcoming activities also have their spot.',
+		},
+		{
+			type: HighlightType.Image,
+			title: 'Upcoming games page',
+			image: gameResults,
+			caption:
+				'With development of this site an integration with data providers has been set up, so that all current standings of the teams can be shown. All upcoming games, and the results of previous games are also shown. There are overview pages for each, and individual team pages with all information for them.',
+		},
+		{
+			type: HighlightType.Link,
+			href: 'https://kosc.nl',
+			title: 'Current website of the club (not made by me)',
+			caption:
+				'After a good run of improving the online presence of the club, and proving more and more features, the Joomla based site got replaced by a WordPress based one and a more morden new design.',
+		},
+	],
 };
 
 export default kosc;
