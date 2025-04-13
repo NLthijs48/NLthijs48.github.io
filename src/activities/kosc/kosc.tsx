@@ -4,6 +4,8 @@ import ActivityType from '../ActivityType';
 import HighlightType from '../HighlightType';
 import home from './home.jpg';
 import gameResults from './upcomingGames.jpg';
+import logo from './logo.jpg';
+import React from 'react';
 
 const kosc: HobbyInformation = {
 	activityType: ActivityType.Hobby,
@@ -13,6 +15,20 @@ const kosc: HobbyInformation = {
 	from: 'May 2011', // Joined as a volunteer
 	till: 'April 2018',
 	Icon: SportsSoccerIcon,
+	description: (
+		<div>
+			<img
+				src={logo}
+				alt="KOSC logo: wordmark with the KOSC letters, where the O is a soccer ball. 1933 is the start date of the club, located in Ootmarsum."
+				style={{height: 150}}
+			/>
+			<p>Built using the Joomla CMS and a custom template, migrated from a custom CMS that was used before.</p>
+			<p>
+				During the rollout of the new website a lot of content curation has been handed to other teams. This was important to ensure
+				everything is kept up-to-date, and to focus the IT committee on improving the setup of the website itself.
+			</p>
+		</div>
+	),
 	highlights: [
 		{
 			type: HighlightType.Image,
