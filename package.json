@@ -71,11 +71,6 @@
     "predeploy": "npm run build",
     "deploy": "echo 'wiefferink.me' > ./build/CNAME && gh-pages -d build"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app"
-    ]
-  },
   "browserslist": {
     "production": [
       ">0.2%",
