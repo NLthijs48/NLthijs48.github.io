@@ -10,7 +10,7 @@
     "@fontsource/roboto": "^4.5.8",
     "@mui/icons-material": "^5.10.15",
     "@mui/material": "^5.10.15",
-    "@pmmmwh/react-refresh-webpack-plugin": "^0.5.3",
+    "@pmmmwh/react-refresh-webpack-plugin": "^0.6.1",
     "@sentry/react": "^7.57.0",
     "@svgr/webpack": "^5.5.0",
     "@types/node": "^16.11.58",
@@ -59,7 +59,7 @@
     "terser-webpack-plugin": "^5.2.5",
     "typescript": "^4.8.3",
     "webpack": "^5.64.4",
-    "webpack-dev-server": "^4.6.0",
+    "webpack-dev-server": "^5.2.2",
     "webpack-manifest-plugin": "^4.0.2",
     "workbox-webpack-plugin": "^6.4.1"
   },
